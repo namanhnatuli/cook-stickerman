@@ -9,6 +9,7 @@ You must receive and review the following inputs before planning:
 - **Video Title:** {PASTE TITLE}
 - **Governing Thesis & Core Promise:** {WHAT IS THE VIEWER LEARNING?}
 - **Final Approved Script:** {PASTE FINAL SCRIPT WITH [Visual Cue] TAGS}
+- **Verified Research Dossier / Approved Claim Map:** {PASTE DOSSIER OR SOURCE-ID SUMMARY SO EVIDENCE BASIS CAN BE VERIFIED}
 - **Available Footage / Stock Access:** {e.g., Free Stock (Pexels) + Wikimedia Public Domain, OR Paid Storyblocks / Envato}
 - **Brand Colors & Typography Constraints:** {e.g., Mustard yellow #E5A93C, Caramel orange #D97326, Charcoal dark background, Font: Montserrat / Fredoka}
 
@@ -45,7 +46,7 @@ Break the script into logical **Scene Clusters**:
 #### **[Scene Cluster #] | Timestamp / Script Beat**
 - **Type:** `[MUST-HAVE ANCHOR]` or `[SUPPORTING B-ROLL]`
 - **Script Excerpt:** *"Narrated line..."*
-- **Evidence Basis:** `[S1]`, `[S4]`, or `illustrative only — no factual claim` (Ensures visual assets accurately depict the underlying science/history rather than misleading the viewer)
+- **Evidence Basis:** `[S1]`, `[S4]`, or `illustrative only — no factual claim` (Cross-referenced directly with the Verified Research Dossier to ensure animations and footage accurately depict true science and history).
 - **Visual Composition (4-Layer Structure):**
   - *Layer 1 (Background):* Kraft paper, warm kitchen counter, dark studio gradient, split-screen.
   - *Layer 2 (Main Visual Asset):* Macro cake footage, 3D cross-section diagram, archival document.

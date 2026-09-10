@@ -43,23 +43,25 @@ To ensure the video is an enriching educational journey rather than a disjointed
 
 1. **The Hook (0:00 - 0:20):** Dive straight into a verified surprising anomaly, baking contradiction, or widespread misconception. Zero filler greetings.
 2. **The Governing Thesis (0:20 - 0:45):** State the central scientific or historical lens that unites every item in the video.
-3. **The Itemized Body (Causal Chain in Action):** For every item covered, progress through:
-   - *Identity & Texture:* What it is and how it eats.
-   - *Causal Chain:* Technique/Ingredient → Physical/Chemical Mechanism → Visible Texture Result.
-   - *The Non-Obvious Insight:* Why it actually works or why it fails (answering "Why does this matter to a baker?").
+3. **The Itemized Body (Causal Chain with Dynamic Narrative Ordering):**
+   - **Mandatory Content:** Every single item must communicate its underlying causal chain (`Technique/Ingredient` → `Physical Mechanism` → `Visible Texture Result` → `Baker Takeaway`).
+   - **Anti-Monotony & Flexible Structure:** **Do NOT mechanically recite every item in identical order.** Vary the entry point and sequencing based on the item's dominant lens:
+     - *History-First (e.g., Victoria Sponge, Pound Cake):* Open on the royal banquet or wartime rationing that forced the recipe into existence, then explain the butter-sugar aeration mechanics that supported it.
+     - *Failure-First (e.g., Sunken Cakes, Rubbery Chiffons):* Open on the tragic sunken crater on a home baker's cooling rack, then diagnose the chemical cause.
+     - *Texture/Sensory-First (e.g., Basque Cheesecake, Molten Lava):* Open on the blistering burnt crust and molten center, then reveal how extreme oven heat bypasses interior coagulation.
    - *Transparent Inferences:* You may make clearly signposted inferences only when they directly follow from cited facts in the dossier (e.g., *"Because oil stays fluid below room temperature, chiffon cakes maintain a soft, pliable crumb even when chilled, unlike butter cakes"*). Do NOT introduce new unverified historical or statistical claims through inference.
 4. **The Synthesis Section (Before Outro):** Step back from individual items to compare them and reinforce the governing thesis (e.g., showing a spectrum of fat vs. foam, or chemical rise vs. steam).
 5. **The Outro & Actionable Takeaway:** Deliver one practical rule of thumb or decision framework viewers can immediately apply in their kitchen, followed by a crisp engagement prompt and CTA.
 
 ---
 
-### **ADAPTIVE ITEM STORYTELLING (AVOID MECHANICAL REPETITION):**
+### **ADAPTIVE ITEM STORYTELLING (DOMINANT NARRATIVE LENSES):**
 
-Choose the most compelling **Dominant Narrative Lens** for each item based on the verified Research Dossier:
+Select the best lens to guide each item's unique entry angle:
 
-| Dominant Lens | Best Applied To | Core Narrative Focus |
+| Dominant Lens | Best Applied To | Core Narrative Focus & Entry Angle |
 |---|---|---|
-| **Science & Physics** | Chiffon, Angel Food, Sponge, Soufflé | Aeration, protein foam, gluten inhibition, temperature physics. |
+| **Science & Physics** | Chiffon, Angel Food, Sponge, Soufflé | Aeration physics, protein foam structure, gluten inhibition. |
 | **History & Accidental Lore** | Black Forest, Victoria Sponge, Pound Cake | Documented origins, royal banquets, pantry rationing, evolution. |
 | **Baking Disaster & Failure** | Sunken cakes, rubbery curdling, cracked tops | The precise chemical mistake home bakers make and the scientific fix. |
 | **Texture Contrast & Anatomy** | Basque Cheesecake, Molten Lava, Meringue | The sensory physics of crust vs. core, sound of the crack. |

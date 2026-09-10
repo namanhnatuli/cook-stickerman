@@ -16,14 +16,16 @@ DO NOT write a voiceover script. DO NOT write narration. Output ONLY a structure
 
 ### **ANTI-HALLUCINATION & FACT-CHECKING RULES (CRITICAL):**
 1. **Zero Tolerance for Invented Facts:** Never invent a date, inventor, patent number, corporate campaign, controversy, or scientific mechanism.
-2. **Mandatory Claim-to-Source Mapping:** Every single factual claim and Knowledge Map insight must link directly to a Source ID (`[S1]`, `[S2]`, etc.).
+2. **Mandatory Claim-to-Source Mapping:** Every single factual claim and Knowledge Map element must link directly to a Source ID (`[S1]`, `[S2]`, etc.).
 3. **Definitions of Status Labels:**
    - `[CONFIRMED]`: Backed by primary historical records, peer-reviewed food science, patents, or established academic consensus. Must have a valid Source ID.
    - `[DISPUTED]`: Conflicting historical accounts (e.g., multiple nations claiming invention like Pavlova or Tres Leches). Must detail both sides and cite sources.
    - `[POPULAR MYTH]`: Widely repeated folklore or marketing claims without verifiable proof. Clearly label as folklore with source explaining the myth.
    - `[UNVERIFIED - DO NOT NARRATE]`: Claims with insufficient proof or where sources cannot be verified. You MUST use this tag if evidence is weak. The scriptwriter is strictly forbidden from stating these as fact.
-4. **Anti-Fabrication Access Check Rule:** Only mark `Opened and verified` in the Source Register if the source was actually opened and verified during this session. Otherwise, you MUST label it `Not independently verified`.
-5. **No Forced Drama:** DO NOT force a "war, famine, scandal, or corporate scheme" onto every item. Focus on genuine, verified insights, chemical mechanics, and baking failure points.
+4. **Source Quality Hierarchy & The Weak Secondary Rule:**
+   - A `Weak Secondary` source (random food blogs, unverified cooking forums, promotional listicles) **CANNOT** serve as the sole justification for a `[CONFIRMED]` claim. A claim backed only by a weak secondary source must be labeled `[UNVERIFIED - DO NOT NARRATE]`.
+5. **Anti-Fabrication Access Check Rule:** Only mark `Opened and verified` in the Source Register if the source was actually opened and verified during this session. Otherwise, you MUST label it `Not independently verified`.
+6. **No Forced History:** If reliable historical origin records are irrelevant or insufficiently supported (e.g., in topics focused on oven heat dynamics, flour chemistry, cake collapse causes, or frosting stability), **omit the history section entirely** rather than cluttering the dossier with unverified trivia. Focus on genuine chemical mechanics and baking failure points.
 
 ---
 
@@ -33,13 +35,15 @@ For each item/cake (designating 2–3 as **Hero Items** with expanded detail):
 
 #### 1. Knowledge Map (Pedagogy & Transferable Principles)
 - **Core Learning Outcome:** What fundamental concept must the viewer understand after this section?
-- **Essential Insight (Must be in narration):** The indispensable scientific or historical truth that unlocks this cake.
   - *Evidence:* `[S1]`, `[S2]`
+- **Essential Insight (Must be in narration):** The indispensable scientific or historical truth that unlocks this cake.
+  - *Evidence:* `[S1]`, `[S3]`
 - **Valuable Enrichment (Narrate if it materially deepens understanding and is not redundant):** Secondary historical context, regional evolution, or nuanced baking tip.
-  - *Evidence:* `[S3]`
-- **Optional Deep Cut (Visual note / On-screen graphic / Description only):** A niche trivia or archival detail to display as visual text without slowing audio pacing.
   - *Evidence:* `[S4]`
+- **Optional Deep Cut (Visual note / On-screen graphic / Description only):** A niche trivia or archival detail to display as visual text without slowing audio pacing.
+  - *Evidence:* `[S5]`
 - **Causal Chain:** `Ingredient / Technique Choice` → `Physical/Chemical Mechanism` → `Visible Crumb/Texture Result` → `Practical Baker Takeaway`.
+  - *Evidence:* `[S1]`, `[S2]`
 
 #### 2. Chemical & Physical Mechanics (The Science)
 - **Primary Structural Mechanism:**
@@ -55,7 +59,7 @@ For each item/cake (designating 2–3 as **Hero Items** with expanded detail):
   - Status: `[CONFIRMED]`
   - Source ID: `[S1]`
 
-#### 3. History & Lore
+#### 3. History & Lore (Omit if not relevant or insufficiently supported)
 - **Origin Records:**
   - Claim: [Documented dates, locations, or early cookbook mentions]
   - Status: `[CONFIRMED]` or `[DISPUTED]`

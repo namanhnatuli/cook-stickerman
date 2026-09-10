@@ -14,6 +14,7 @@ You must review the following inputs before drafting thumbnail directions:
 - **Core Learning Promise / The Big Insight:** {e.g., "Liquid oil remains fluid at cool temperatures, butter crystalizes solid"}
 - **One Visual Proof:** {e.g., Side-by-side chilled comparison: rock-hard butter crumb vs. springy oil crumb}
 - **Hero Object:** {The cake, component, tool, failure result, or visual proof that most accurately demonstrates the learning promise (e.g., a towering cross-section slice, an inverted sunken cake, a broken buttercream emulsion, or a chemical bubble macro)}
+- **Visual Aesthetic Style:** {CHOOSE ONE: Commercial Food Photography / 3D Scientific Cutaway & X-Ray Render / Editorial Diagram Composite}
 - **Brand Colors:** {e.g., Warm caramel #D97326, Mustard yellow #E5A93C, Charcoal backdrop}
 - **Text Overlay Direction (2–4 words max):** {e.g., "NEVER USE BUTTER?"}
 
@@ -32,10 +33,10 @@ A high-CTR YouTube thumbnail on mobile needs instant visual hierarchy within 0.5
 #### **Part A Image Prompts (Separated by Generator Engine):**
 
 **For Midjourney:**
-> A cinematic, hyper-detailed YouTube thumbnail hero visual of a [HERO OBJECT], occupying 50 percent of the frame on the center-right, showing distinct visual texture, [DESCRIBE INTERNAL TEXTURE / FAILURE DETAIL / FROSTING]. Left side features [DESCRIBE VISUAL PROOF / TENSION CUE, e.g., a deflated sunken cake or comparison texture]. Dramatic studio food photography, warm directional side-lighting highlighting textures and moist crumbs, shallow depth of field. Rich saturated [BRAND BACKGROUND COLOR: e.g., deep charcoal / dark warm caramel] studio background with clean negative space on the upper left for bold text overlay. Commercial food advert style, no text, no logos. --ar 16:9 --style raw
+> A cinematic, hyper-detailed YouTube thumbnail hero visual in [CHOSEN STYLE: Commercial Food Photography / 3D Scientific Cutaway Render / Editorial Diagram Composite] featuring a [HERO OBJECT], occupying 50 percent of the frame on the center-right, showing distinct visual texture, [DESCRIBE INTERNAL TEXTURE / FAILURE DETAIL / MOIST CRUMB / EMULSION]. Left side features [DESCRIBE VISUAL PROOF / TENSION CUE, e.g., a deflated sunken cake or comparison texture]. Dramatic studio lighting, directional side-lighting highlighting textures, shallow depth of field. Rich saturated [BRAND BACKGROUND COLOR: e.g., deep charcoal / dark warm caramel] studio background with clean negative space on the upper left for bold text overlay. Commercial advertising quality, no text, no logos. --ar 16:9 --style raw
 
 **For Flux / DALL-E:**
-> A 16:9 landscape composition cinematic food photography thumbnail. In the center-right, a massive, ultra-appetizing visual of a [HERO OBJECT] taking up half the image, displaying rich texture and [DESCRIBE MOIST / AIRY / FAILURE DETAILS]. On the left side, [DESCRIBE VISUAL PROOF / TENSION CUE] for comparison. Warm directional studio lighting, crisp focus on food texture, blurred deep [BRAND BACKGROUND COLOR] studio background with ample empty negative space in the upper left corner. Professional high-end food commercial look, completely without any text or overlay words.
+> A 16:9 landscape composition in [CHOSEN STYLE: high-end commercial food photography / 3D scientific cutaway illustration]. In the center-right, a massive, ultra-detailed visual of a [HERO OBJECT] taking up half the image, displaying rich texture and [DESCRIBE MOIST / AIRY / FAILURE DETAILS]. On the left side, [DESCRIBE VISUAL PROOF / TENSION CUE] for comparison. Warm directional studio lighting, crisp focus on physical texture, blurred deep [BRAND BACKGROUND COLOR] studio background with ample empty negative space in the upper left corner. High-impact commercial look, completely without any text or overlay words.
 
 ---
 
