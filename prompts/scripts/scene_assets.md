@@ -4,6 +4,16 @@ Your mission is to take a finalized YouTube script and convert it into an effici
 
 ---
 
+### **REQUIRED PRODUCTION INPUTS:**
+You must receive and review the following inputs before planning:
+- **Video Title:** {PASTE TITLE}
+- **Target Duration:** {e.g., 8 mins / 10 mins}
+- **Final Approved Script:** {PASTE FINAL SCRIPT WITH [Visual Cue] TAGS}
+- **Available Footage / Stock Access:** {e.g., Free Stock (Pexels) + Wikimedia Public Domain, OR Paid Storyblocks / Envato}
+- **Brand Colors & Typography Constraints:** {e.g., Mustard yellow #E5A93C, Caramel orange #D97326, Charcoal dark background, Font: Montserrat / Fredoka}
+
+---
+
 ### **PRODUCTION REALITY RULES (Avoid Editor Burnout & Asset Bloat):**
 1. **Pacing Reality:** Do NOT over-script a new scene every 3 seconds. An 8–10 minute video should have approximately **25–35 core scene clusters**, broken down into:
    - **Must-Have Anchor Scenes (10–12 scenes):** Hook, Hero items, Science cross-section animations, Archival proof reveals, Outro.
@@ -42,10 +52,9 @@ Break the script into logical **Scene Clusters**:
 1. **Mascot Cue Sheet:** Exact timestamps and poses used (total 5–8 occurrences).
 2. **New Mascot Pose Prompts (if any):** Ready-to-use prompt for Midjourney/Flux following `prompts/mascot/master.md`.
 3. **Reusable Motion Graphic Checklist:** Templates needed for this episode.
-4. **Asset Licensing Review Table (Human Verification Required):**
-   - Provide a review checklist for the human editor:
-     - *Asset Candidate Description*
-     - *Candidate Source URL*
-     - *License Stated on Detail Page (Public Domain / CC-BY / Commercial Stock)*
-     - *Attribution Required: [Yes/No]*
-     - *Human Verification Status: [Pending / Verified]*
+4. **Asset Licensing Review Table (Mandatory Human Verification):**
+   - For every asset candidate listed, the AI must strictly format the table with unverified default values so the human editor performs the check:
+
+| Asset Candidate Description | Candidate Discovery URL | License on Asset Detail Page | Attribution Required | Commercial-Use Status | Human Verification Status |
+|---|---|---|---|---|---|
+| [Asset name] | [URL] | **NOT CHECKED BY AI** | **NOT CHECKED BY AI** | **NOT CHECKED BY AI** | **Pending** |

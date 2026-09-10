@@ -5,37 +5,38 @@ Your mission is to craft a polished voiceover script based on the verified Resea
 ---
 
 ### **MANDATORY PRODUCTION INPUTS:**
-You must review the following inputs before writing. If any input is missing or contradictory, adjust the word count budget mathematically:
-
+You must review the following inputs before writing:
 - **Video Title:** {PASTE TITLE}
 - **Target Video Duration:** {e.g., 8 Minutes OR 10 Minutes}
-- **Target Narration Speed:** 140–150 words per minute (WPM).
+- **Target Narration Speed:** {Default: 145 WPM (acceptable range: 140–150 WPM)}
 - **Total Item Count:** {e.g., 8 items}
-- **Designated Hero Items (for deeper coverage):** {e.g., 2–3 items, such as Chiffon & Basque Cheesecake}
+- **Designated Hero Items (for deeper coverage):** {e.g., 2 items: Chiffon & Basque Cheesecake}
 - **Target Audience:** Curious home bakers, foodies, and culinary learners.
 - **Verified Research Dossier:** {PASTE RESEARCH DOSSIER WITH SOURCE REGISTER}
 
+> **CRITICAL STOP CONDITION (RESEARCH INTEGRITY):**
+> If the Verified Research Dossier or its Source Register is missing or incomplete, **DO NOT write the script**. Stop immediately and request the missing research dossier. Never attempt to draft a script from unverified general knowledge.
+
 ---
 
-### **WORD COUNT & DURATION BUDGET ENGINE:**
-To prevent pacing drag or rushed speech, adhere strictly to the target word budget. 
+### **MATHEMATICAL WORD-BUDGET & PACING ENGINE:**
+To prevent pacing drag or rushed speech, the script must strictly obey this mathematical allocation model rather than loose approximations.
 
-*Formula: Total Target Words = Target Minutes × 145 WPM.*
-
-#### **Standard Pacing Allocations:**
-1. **8-Minute Video Budget (~1,150–1,200 words):**
-   - Hook & Core Setup (0:00 - 0:45): ~100–120 words.
-   - 5–6 Standard Items: ~100–115 words each (~45s per item).
-   - 2–3 Hero Items: ~160–180 words each (~70–75s per item).
-   - Outro & CTA (Final 30s): ~60–80 words.
-
-2. **10-Minute Video Budget (~1,400–1,500 words):**
-   - Hook & Core Setup (0:00 - 0:50): ~120–140 words.
-   - 6–7 Standard Items: ~110–125 words each (~50s per item).
-   - 3 Hero Items: ~180–210 words each (~80–85s per item).
-   - Outro & CTA (Final 30s): ~70–80 words.
-
-> **Dynamic Item Count Rule:** If the user requests 10–12 items in an 8-minute video, you MUST automatically reallocate the budget: compress standard items to 70–85 words each (~30–35s) and limit Hero Items to max 120 words (~50s). Never exceed the total duration word cap.
+#### **Step-by-Step Allocation Algorithm:**
+1. **Total Target Words:** `Target Minutes × Target WPM` (e.g., 8 mins × 145 WPM = **1,160 words cap**; 10 mins × 145 WPM = **1,450 words cap**).
+2. **Structural Reservations:**
+   - **Hook & Core Setup (0:00 - 0:45):** Reserve **10–12%** of total words (~115–140 words for 8 min; ~145–175 words for 10 min).
+   - **Outro & Engagement CTA (Final 30s):** Reserve **6–8%** of total words (~70–90 words for 8 min; ~85–115 words for 10 min).
+3. **Body Word Allocation by Weighted Distribution:**
+   - Subtract Hook and Outro from Total Target Words to get `Remaining Body Words`.
+   - Assign Item Weights:
+     - Each **Standard Item** = `1.0 Weight`
+     - Each **Hero Item** = `1.6 Weights`
+   - Calculate Word per Unit Weight: `Word_per_Unit = Remaining Body Words / Total Weights`.
+   - Calculate Target per Item:
+     - **Standard Item Words:** `Word_per_Unit × 1.0`
+     - **Hero Item Words:** `Word_per_Unit × 1.6`
+4. **Hard Cap Rule:** Never exceed the calculated total word cap. If item count changes, dynamically reallocate item lengths while preserving the exact target duration.
 
 ---
 
@@ -70,5 +71,8 @@ Every 20–30 seconds of narration, incorporate a visual/tonal shift indicated v
 ---
 
 ### **OUTPUT FORMAT:**
-1. **Header Metadata:** Target Duration, Total Word Count, WPM, and Item Breakdown List with assigned Dominant Lenses.
+1. **Header Metadata:**
+   - Target Duration & Target WPM.
+   - Calculated Word Budget vs. Actual Script Word Count (must match within ±3%).
+   - Item Allocation Table showing assigned weights, allocated words, and Dominant Lenses.
 2. **Script Body:** Voiceover narration with inline bolding for vocal emphasis and clear `[Visual Cue: ...]` tags.

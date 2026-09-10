@@ -14,12 +14,21 @@ Record these metrics 48 hours and 14 days post-publish to establish empirical ch
 ---
 
 ### **PERFORMANCE BENCHMARKS (48 Hours / 14 Days):**
-> *Note: For a new channel, do not enforce rigid industry targets. Compare against your channel's own rolling 5-video median baseline and analyze by traffic source.*
+> **Channel Maturity Rules for Baselines:**
+> - **1–2 videos published:** Collect raw data only. Do not draw baseline conclusions.
+> - **3–4 videos published:** Compare against the median of available published videos.
+> - **5+ videos published:** Use a rolling 5-video median baseline.
 
-- **CTR by Traffic Source:**
-  - *Browse Features CTR:* ____ % (Main packaging health check)
-  - *YouTube Search CTR:* ____ % (Keyword / intent fit)
-  - *Suggested Videos CTR:* ____ % (Topic relevance fit)
+#### **Traffic & Packaging Breakdown:**
+- **Browse Features:**
+  - *Impressions:* ____ | *Views:* ____ | *Browse CTR:* ____ %
+- **YouTube Search:**
+  - *Impressions:* ____ | *Views:* ____ | *Search CTR:* ____ %
+- **Suggested Videos:**
+  - *Impressions:* ____ | *Views:* ____ | *Suggested CTR:* ____ %
+- **Overall Blended CTR:** ____ %
+
+#### **Audience Retention Metrics:**
 - **First 30 Seconds Retention:** ____ % (Hook effectiveness)
 - **Average Percentage Viewed (APV):** ____ % (Overall pacing health)
 - **Average View Duration (AVD):** ____ min ____ sec
