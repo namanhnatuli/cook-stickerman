@@ -1,14 +1,15 @@
 # YouTube Analytics & Video Post-Mortem Tracker
 
-Record these metrics 48 hours and 14 days post-publish to establish empirical channel baselines and replace assumptions.
+Record these metrics 48 hours and 14 days post-publish to establish empirical channel baselines and assess whether the video successfully taught its core promise.
 
 ---
 
 ### **VIDEO METADATA:**
 - **Episode #:** 
 - **Published Title:**
+- **Governing Thesis / Core Learning Promise:**
 - **Published Date:**
-- **Target Duration:**
+- **Actual Duration:** ____ min ____ sec
 - **Primary Dominant Lenses Used:** (e.g., Science / Lore / Disaster)
 
 ---
@@ -40,16 +41,18 @@ Record these metrics 48 hours and 14 days post-publish to establish empirical ch
 2. **Sharpest Drop-Off Timestamp:** At `[MM:SS]` during `[Specific item or explanation]`.
    - *Root Cause Analysis:* (e.g., Too dry chemical explanation, pacing drag, repetitive transition, confusing visual).
 3. **Spikes in Engagement / Re-watches:** At `[MM:SS]` during `[Specific moment]`.
-   - *What worked:* (e.g., Mascot reaction, shocking cross-section, unexpected marketing scandal).
+   - *What worked:* (e.g., Well-visualized chemical mechanism, clean cross-section comparison, unexpected verified historical origin).
 
 ---
 
-### **AUDIENCE SENTIMENT & COMMENTS:**
-- **Top 3 Recurring Comment Themes:**
-- **Audience Debates / Questions (Fuel for Next Video):**
+### **KNOWLEDGE SIGNALS & AUDIENCE COMPREHENSION:**
+- **Comprehension Clues:** Which explanation generated clarifying questions or "I finally understand why..." comments?
+- **Misconception Persistence:** Did viewers repeat an old myth or misunderstanding in the comments, indicating our explanation was too dense or unclear?
+- **Reusable Teaching Patterns:** Which timestamp contains a visual explanation or causal chain worth templating for future episodes?
+- **Title Promise Alignment:** Did the main takeaway viewers praise match the core learning promise in the title and thumbnail?
 
 ---
 
 ### **LESSONS LEARNED & ACTIONABLE ITERATIONS:**
-- [ ] What will we CHANGE in the next script?
+- [ ] What pedagogical or scientific explanation will we CLARIFY in the next script?
 - [ ] What visual module or storytelling angle should we DOUBLE DOWN on?
