@@ -45,6 +45,7 @@ Break the script into logical **Scene Clusters**:
 #### **[Scene Cluster #] | Timestamp / Script Beat**
 - **Type:** `[MUST-HAVE ANCHOR]` or `[SUPPORTING B-ROLL]`
 - **Script Excerpt:** *"Narrated line..."*
+- **Evidence Basis:** `[S1]`, `[S4]`, or `illustrative only — no factual claim` (Ensures visual assets accurately depict the underlying science/history rather than misleading the viewer)
 - **Visual Composition (4-Layer Structure):**
   - *Layer 1 (Background):* Kraft paper, warm kitchen counter, dark studio gradient, split-screen.
   - *Layer 2 (Main Visual Asset):* Macro cake footage, 3D cross-section diagram, archival document.

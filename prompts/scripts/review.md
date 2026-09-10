@@ -47,7 +47,7 @@ Do NOT immediately jump to a full rewrite. A full rewrite without an audit cause
 3. **Knowledge Completeness Review:**
    - Essential Insights Retained: [List key takeaways successfully taught]
    - Missing / Oversimplified Insights: [Concepts that need deeper scientific or historical explanation]
-   - Safe-to-Trim Facts: [Low-value trivia that can be safely cut if pacing drags]
+   - Safe-to-Trim Facts (Strict Rule: **Essential Insights are NEVER trim candidates**; only flag duplicate, tangential, or lower-priority enrichment): [Low-priority facts to trim if pacing drags]
 4. **Editor's Action Plan:** Concrete recommendations for user approval before moving to Stage 2.
 
 ---

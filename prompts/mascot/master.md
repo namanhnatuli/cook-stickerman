@@ -15,6 +15,7 @@ Using the attached master character as the strict visual reference, create a new
 - identical dark-brown trousers and cream sneakers
 - identical bold black outline thickness
 - identical color treatment and clean 2D vector-style illustration aesthetic
+- full body completely visible, including both feet
 
 ---
 

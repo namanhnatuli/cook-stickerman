@@ -76,6 +76,15 @@ Maintain visual and auditory momentum with inline `[Visual Cue: ...]` tags:
 
 ---
 
+### **STRICT FACTUAL INTEGRITY:**
+- **Dossier Compliance:** Use only claims supported by the Verified Research Dossier.
+- **Zero Hallucination / Unverified Ban:** Never narrate `[UNVERIFIED - DO NOT NARRATE]` claims.
+- **Disputed Claims Rule:** State `[DISPUTED]` claims as disputed (e.g., *"Both Mexico and Nicaragua claim its invention..."*), never as settled fact.
+- **Folklore & Marketing Rule:** State `[POPULAR MYTH]` claims explicitly as folklore, advertising campaigns, or unverified popular lore.
+- **Nuance Preservation:** Preserve the source-backed nuance of historical and scientific claims without dramatic exaggeration.
+
+---
+
 ### **OUTPUT FORMAT:**
 1. **Header Metadata:**
    - Preferred Runtime vs. Calculated Actual Runtime (at 145 WPM).
