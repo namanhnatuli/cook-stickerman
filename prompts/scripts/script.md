@@ -4,16 +4,38 @@ Your mission is to craft a polished voiceover script based on the verified Resea
 
 ---
 
-### **MANDATORY PRODUCTION CONSTRAINTS (Pacing & Word Count Engine):**
-To ensure realistic runtime without pacing drag or rushed speech, adhere strictly to this mathematical engine:
-- **Narration Speed:** 140–150 words per minute (WPM).
-- **Target Duration:** {e.g., 8 Minutes (~1,100–1,200 words) OR 10 Minutes (~1,350–1,500 words)}
-- **Item Count:** {e.g., 8 items}
-- **Pacing Budget:**
-  - **Hook & Setup (0:00 - 0:45):** ~100–120 words.
-  - **Standard Items (4–6 items):** ~100–120 words each (~45–50s per item).
-  - **Hero Items (2–3 items designated for deeper narrative/science):** ~160–190 words each (~70–80s per item).
-  - **Outro & CTA (Final 30s):** ~60–80 words.
+### **MANDATORY PRODUCTION INPUTS:**
+You must review the following inputs before writing. If any input is missing or contradictory, adjust the word count budget mathematically:
+
+- **Video Title:** {PASTE TITLE}
+- **Target Video Duration:** {e.g., 8 Minutes OR 10 Minutes}
+- **Target Narration Speed:** 140–150 words per minute (WPM).
+- **Total Item Count:** {e.g., 8 items}
+- **Designated Hero Items (for deeper coverage):** {e.g., 2–3 items, such as Chiffon & Basque Cheesecake}
+- **Target Audience:** Curious home bakers, foodies, and culinary learners.
+- **Verified Research Dossier:** {PASTE RESEARCH DOSSIER WITH SOURCE REGISTER}
+
+---
+
+### **WORD COUNT & DURATION BUDGET ENGINE:**
+To prevent pacing drag or rushed speech, adhere strictly to the target word budget. 
+
+*Formula: Total Target Words = Target Minutes × 145 WPM.*
+
+#### **Standard Pacing Allocations:**
+1. **8-Minute Video Budget (~1,150–1,200 words):**
+   - Hook & Core Setup (0:00 - 0:45): ~100–120 words.
+   - 5–6 Standard Items: ~100–115 words each (~45s per item).
+   - 2–3 Hero Items: ~160–180 words each (~70–75s per item).
+   - Outro & CTA (Final 30s): ~60–80 words.
+
+2. **10-Minute Video Budget (~1,400–1,500 words):**
+   - Hook & Core Setup (0:00 - 0:50): ~120–140 words.
+   - 6–7 Standard Items: ~110–125 words each (~50s per item).
+   - 3 Hero Items: ~180–210 words each (~80–85s per item).
+   - Outro & CTA (Final 30s): ~70–80 words.
+
+> **Dynamic Item Count Rule:** If the user requests 10–12 items in an 8-minute video, you MUST automatically reallocate the budget: compress standard items to 70–85 words each (~30–35s) and limit Hero Items to max 120 words (~50s). Never exceed the total duration word cap.
 
 ---
 
@@ -42,14 +64,11 @@ Every 20–30 seconds of narration, incorporate a visual/tonal shift indicated v
 
 ### **STRICT FACTUAL INTEGRITY:**
 - Use ONLY facts, dates, and names provided in the verified Research Dossier.
-- Respect claim status: If a claim is labeled `[DISPUTED]` or `[POPULAR MYTH]`, explicitly narrate it as such (e.g., *"According to culinary folklore..."* or *"While both Mexico and Nicaragua dispute the origin..."*). NEVER state unverified claims as absolute facts.
+- Respect claim status: If a claim is labeled `[DISPUTED]` or `[POPULAR MYTH]`, explicitly narrate it as such (e.g., *"According to culinary folklore..."* or *"While both Mexico and Nicaragua dispute the origin..."*).
+- NEVER use claims marked `[UNVERIFIED - DO NOT NARRATE]`.
 
 ---
 
 ### **OUTPUT FORMAT:**
 1. **Header Metadata:** Target Duration, Total Word Count, WPM, and Item Breakdown List with assigned Dominant Lenses.
 2. **Script Body:** Voiceover narration with inline bolding for vocal emphasis and clear `[Visual Cue: ...]` tags.
-
----
-
-**PASTE VERIFIED RESEARCH DOSSIER & TOPIC BELOW TO BEGIN SCRIPTING:**

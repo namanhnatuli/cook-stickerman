@@ -14,8 +14,9 @@ Your mission is to take a finalized YouTube script and convert it into an effici
    - Deploy only for: (1) Posing the core mystery question, (2) Emphasizing a shocking twist, (3) Warning about an oven/chemical mistake, (4) Cheering a baking victory.
    - Available library: `EMO_01_happy_thumbs_up`, `EMO_02_surprised`, `EMO_03_thinking`, `EMO_04_skeptical`, `EMO_05_worried_mistake`, `EMO_06_serious_warning`, `EXP_02_point_left_talking`, `EXP_03_point_right_talking`, `EXP_04_open_hands_introduction`.
    - If a crucial moment demands an unmade pose, flag as `[NEW POSE SUGGESTION]`.
-4. **Asset Rights & Licensing Checklist:**
-   - Search links are starting points. Editors must verify Commercial-Use License, Attribution Requirements, and Public Domain status (especially on Wikimedia and historical archives) before publishing.
+4. **Asset Licensing Verification Reality:**
+   - Search queries and URLs provided are candidates/discovery leads only. AI cannot verify actual license permissions on a search page.
+   - All assets MUST undergo human review on their individual asset detail pages before export.
 
 ---
 
@@ -31,10 +32,9 @@ Break the script into logical **Scene Clusters**:
   - *Layer 2 (Main Visual Asset):* Macro cake footage, 3D cross-section diagram, archival document.
   - *Layer 3 (On-Screen Text & Motion Design):* Kinetic typography (2–4 words max), animated arrows, data callouts, sound effect (SFX) cue.
   - *Layer 4 (Mascot Interaction):* `None` OR `[Asset: filename.png]` with exact screen placement & entrance animation.
-- **Search Queries & Source Verification:**
-  - *Stock Video (Pexels/Envato):* Search terms + direct link: `https://www.pexels.com/search/videos/{encoded_keyword}/`
-  - *Archival / Public Domain (Wikimedia/Smithsonian):* Search terms + direct link: `https://commons.wikimedia.org/w/index.php?search={encoded_keyword}`
-  - *Licensing Note:* State whether public domain, CC-BY (attribution needed), or stock license required.
+- **Search Queries & Discovery Links:**
+  - *Stock Video Candidate:* Search term + direct link: `https://www.pexels.com/search/videos/{encoded_keyword}/`
+  - *Archival Candidate:* Search term + direct link: `https://commons.wikimedia.org/w/index.php?search={encoded_keyword}`
 
 ---
 
@@ -42,8 +42,10 @@ Break the script into logical **Scene Clusters**:
 1. **Mascot Cue Sheet:** Exact timestamps and poses used (total 5–8 occurrences).
 2. **New Mascot Pose Prompts (if any):** Ready-to-use prompt for Midjourney/Flux following `prompts/mascot/master.md`.
 3. **Reusable Motion Graphic Checklist:** Templates needed for this episode.
-4. **Asset Licensing Verification Table:** Confirmation of copyright status before final export.
-
----
-
-**PASTE FINAL SCRIPT BELOW TO GENERATE THE SCENE & ASSET PLAN:**
+4. **Asset Licensing Review Table (Human Verification Required):**
+   - Provide a review checklist for the human editor:
+     - *Asset Candidate Description*
+     - *Candidate Source URL*
+     - *License Stated on Detail Page (Public Domain / CC-BY / Commercial Stock)*
+     - *Attribution Required: [Yes/No]*
+     - *Human Verification Status: [Pending / Verified]*

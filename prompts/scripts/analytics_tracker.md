@@ -1,6 +1,6 @@
 # YouTube Analytics & Video Post-Mortem Tracker
 
-Record these metrics 48 hours and 14 days post-publish to replace generic templates with empirical channel data.
+Record these metrics 48 hours and 14 days post-publish to establish empirical channel baselines and replace assumptions.
 
 ---
 
@@ -14,9 +14,14 @@ Record these metrics 48 hours and 14 days post-publish to replace generic templa
 ---
 
 ### **PERFORMANCE BENCHMARKS (48 Hours / 14 Days):**
-- **CTR (Impressions Click-Through Rate):** ____ % (Target: >6.5% on Browse)
-- **First 30 Seconds Retention:** ____ % (Target: >70%)
-- **Average Percentage Viewed (APV):** ____ % (Target: >45–50%)
+> *Note: For a new channel, do not enforce rigid industry targets. Compare against your channel's own rolling 5-video median baseline and analyze by traffic source.*
+
+- **CTR by Traffic Source:**
+  - *Browse Features CTR:* ____ % (Main packaging health check)
+  - *YouTube Search CTR:* ____ % (Keyword / intent fit)
+  - *Suggested Videos CTR:* ____ % (Topic relevance fit)
+- **First 30 Seconds Retention:** ____ % (Hook effectiveness)
+- **Average Percentage Viewed (APV):** ____ % (Overall pacing health)
 - **Average View Duration (AVD):** ____ min ____ sec
 
 ---
