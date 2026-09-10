@@ -33,7 +33,7 @@ You must review the following inputs before writing:
 3. **Runtime Reconciliation (Post-Script Calculation):**
    After completing the draft, calculate the exact actual runtime from total words. If it exceeds the preferred runtime:
    - **DO NOT** indiscriminately chop out necessary explanations.
-   - Recommend in the header: *(1) Keep the complete long-form episode (if engagement value is high); (2) Split into a 2-part sequel; OR (3) Flag specific low-priority facts to trim in Stage 2 review.*
+   - Recommend in the header: *(1) Keep the complete long-form episode (if it preserves essential, non-redundant learning value); (2) Split into a 2-part sequel; OR (3) Flag specific low-priority facts to trim in Stage 2 review.*
 
 ---
 
@@ -46,9 +46,9 @@ To ensure the video is an enriching educational journey rather than a disjointed
 3. **The Itemized Body (Causal Chain with Dynamic Narrative Ordering):**
    - **Mandatory Content:** Every single item must communicate its underlying causal chain (`Technique/Ingredient` → `Physical Mechanism` → `Visible Texture Result` → `Baker Takeaway`).
    - **Anti-Monotony & Flexible Structure:** **Do NOT mechanically recite every item in identical order.** Vary the entry point and sequencing based on the item's dominant lens:
-     - *History-First (e.g., Victoria Sponge, Pound Cake):* Open on the royal banquet or wartime rationing that forced the recipe into existence, then explain the butter-sugar aeration mechanics that supported it.
+     - *History-First (e.g., Victoria Sponge, Pound Cake):* Open only on a verified historical context explicitly confirmed in the dossier, then explain the structural aeration mechanics that supported it.
      - *Failure-First (e.g., Sunken Cakes, Rubbery Chiffons):* Open on the tragic sunken crater on a home baker's cooling rack, then diagnose the chemical cause.
-     - *Texture/Sensory-First (e.g., Basque Cheesecake, Molten Lava):* Open on the blistering burnt crust and molten center, then reveal how extreme oven heat bypasses interior coagulation.
+     - *Texture/Sensory-First (e.g., Basque Cheesecake, Molten Lava):* Open on the blistering dark crust and creamy center, then explain how high heat rapidly browns the exterior while the center remains less fully set.
    - *Transparent Inferences:* You may make clearly signposted inferences only when they directly follow from cited facts in the dossier (e.g., *"Because oil stays fluid below room temperature, chiffon cakes maintain a soft, pliable crumb even when chilled, unlike butter cakes"*). Do NOT introduce new unverified historical or statistical claims through inference.
 4. **The Synthesis Section (Before Outro):** Step back from individual items to compare them and reinforce the governing thesis (e.g., showing a spectrum of fat vs. foam, or chemical rise vs. steam).
 5. **The Outro & Actionable Takeaway:** Deliver one practical rule of thumb or decision framework viewers can immediately apply in their kitchen, followed by a crisp engagement prompt and CTA.

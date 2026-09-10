@@ -13,6 +13,9 @@ You must receive and review the following inputs before planning:
 - **Available Footage / Stock Access:** {e.g., Free Stock (Pexels) + Wikimedia Public Domain, OR Paid Storyblocks / Envato}
 - **Brand Colors & Typography Constraints:** {e.g., Mustard yellow #E5A93C, Caramel orange #D97326, Charcoal dark background, Font: Montserrat / Fredoka}
 
+> **CRITICAL STOP CONDITION (SOURCE TRACEABILITY):**
+> If the Verified Research Dossier or Approved Claim Map is missing, **DO NOT assign factual Evidence Basis or generate factual on-screen copy**. Stop immediately and request the missing source map first.
+
 ---
 
 ### **PRODUCTION REALITY RULES (Avoid Editor Burnout & Asset Bloat):**

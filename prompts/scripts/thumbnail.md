@@ -30,13 +30,25 @@ A high-CTR YouTube thumbnail on mobile needs instant visual hierarchy within 0.5
 3. **High-Contrast Background:** Rich, saturated brand colors or warm studio backdrop (avoid pure white `#FFFFFF` that blends into YouTube's light mode interface).
 4. **Text Overlay (Manual in Photoshop/Canva):** Strictly **2 to 4 bold words max**. Do NOT render text inside AI image generators.
 
-#### **Part A Image Prompts (Separated by Generator Engine):**
+#### **Part A Image Prompts (Separated by Generator Engine & Style):**
 
-**For Midjourney:**
-> A cinematic, hyper-detailed YouTube thumbnail hero visual in [CHOSEN STYLE: Commercial Food Photography / 3D Scientific Cutaway Render / Editorial Diagram Composite] featuring a [HERO OBJECT], occupying 50 percent of the frame on the center-right, showing distinct visual texture, [DESCRIBE INTERNAL TEXTURE / FAILURE DETAIL / MOIST CRUMB / EMULSION]. Left side features [DESCRIBE VISUAL PROOF / TENSION CUE, e.g., a deflated sunken cake or comparison texture]. Dramatic studio lighting, directional side-lighting highlighting textures, shallow depth of field. Rich saturated [BRAND BACKGROUND COLOR: e.g., deep charcoal / dark warm caramel] studio background with clean negative space on the upper left for bold text overlay. Commercial advertising quality, no text, no logos. --ar 16:9 --style raw
+##### **Option 1: Commercial Food Photography OR 3D Scientific Cutaway**
+*(Rich textures, directional studio lighting, soft shallow depth of field)*
 
-**For Flux / DALL-E:**
-> A 16:9 landscape composition in [CHOSEN STYLE: high-end commercial food photography / 3D scientific cutaway illustration]. In the center-right, a massive, ultra-detailed visual of a [HERO OBJECT] taking up half the image, displaying rich texture and [DESCRIBE MOIST / AIRY / FAILURE DETAILS]. On the left side, [DESCRIBE VISUAL PROOF / TENSION CUE] for comparison. Warm directional studio lighting, crisp focus on physical texture, blurred deep [BRAND BACKGROUND COLOR] studio background with ample empty negative space in the upper left corner. High-impact commercial look, completely without any text or overlay words.
+- **For Midjourney:**
+  > A cinematic, hyper-detailed YouTube thumbnail hero visual in [Commercial Food Photography / 3D Scientific Cutaway Render] featuring a [HERO OBJECT], occupying 50 percent of the frame on the center-right, showing distinct visual texture, [DESCRIBE INTERNAL TEXTURE / FAILURE DETAIL / MOIST CRUMB / EMULSION]. Left side features [DESCRIBE VISUAL PROOF / TENSION CUE, e.g., a deflated sunken cake or comparison texture]. Dramatic directional studio lighting highlighting textures, soft shallow depth of field. Rich saturated [BRAND BACKGROUND COLOR: e.g., deep charcoal / dark warm caramel] studio background with clean negative space on the upper left for bold text overlay. Commercial advertising quality, no text, no logos. --ar 16:9 --style raw
+
+- **For Flux / DALL-E:**
+  > A 16:9 landscape composition in [high-end commercial food photography / 3D scientific cutaway illustration]. In the center-right, a massive, ultra-detailed visual of a [HERO OBJECT] taking up half the image, displaying rich texture and [DESCRIBE MOIST / AIRY / FAILURE DETAILS]. On the left side, [DESCRIBE VISUAL PROOF / TENSION CUE] for comparison. Warm directional studio lighting, crisp focus on physical texture, blurred deep [BRAND BACKGROUND COLOR] studio background with ample empty negative space in the upper left corner. High-impact commercial look, completely without any text or overlay words.
+
+##### **Option 2: Editorial Diagram Composite**
+*(Crisp graphic visual hierarchy, flat clean vector shapes, solid bold colors, sharp focus across all elements, NO blur or depth of field)*
+
+- **For Midjourney:**
+  > A modern editorial graphic illustration YouTube thumbnail in clean vector composite style featuring an analytical breakdown of a [HERO OBJECT], occupying 50 percent of the frame on the center-right, showing simplified structural layers, [DESCRIBE SCHEMATIC LAYERS / AIR POCKETS / CALLOUT ZONES]. Left side features [DESCRIBE COMPARISON SCHEMATIC / TENSION CUE]. Flat solid-color [BRAND BACKGROUND COLOR: e.g., deep charcoal / warm ochre yellow] background, crisp sharp edges across the entire canvas, no blurred depth of field, generous negative space on the upper left for bold typography. High-contrast infographic poster aesthetic, no text, no labels. --ar 16:9 --style raw
+
+- **For Flux / DALL-E:**
+  > A 16:9 landscape composition modern editorial infographic and vector diagram composite. In the center-right, a crisp graphic analytical illustration of a [HERO OBJECT] displaying simplified internal layers and [DESCRIBE STRUCTURAL / BUBBLE / FAILURE ZONES]. On the left side, [DESCRIBE COMPARISON SCHEMATIC] for visual contrast. Flat uniform [BRAND BACKGROUND COLOR] background, completely sharp focus across all elements without any depth of field blur or photo lighting. Clean geometric layout with ample negative space in the upper left corner. Professional editorial magazine visual, completely without text or labels.
 
 ---
 
