@@ -37,9 +37,16 @@ Do NOT immediately jump to a full rewrite. A full rewrite without an audit cause
 5. **Structural Arc & Thesis Clarity:** Does the script have a unifying thesis, or does it feel like a random listicle? Is there a meaningful synthesis section comparing items?
 6. **Sensory & Audio Cadence:** Are sentences punchy, conversational, and rich in culinary-specific sensory language?
 7. **Pattern Interrupts & Visual Feasibility:** Are there visual shifts/interrupts every 20–30 seconds? Are cues practical for production?
+8. **Compliance with the 6 Mandatory Laws:**
+   - (1) Zero hallucination (uncertain items tagged `[NEEDS VERIFICATION]` / `[CẦN KIỂM CHỨNG]`).
+   - (2) Exactly 3 natural soft CTAs (early, mid, outro).
+   - (3) High specificity (exact numbers, years, temperatures, geography; zero vague phrasing).
+   - (4) Policy safety (zero knives/blood/suicide terms; replaced with safe euphemisms).
+   - (5) AI graphic disclosures embedded where applicable.
+   - (6) Actual word count within ±10% budget tolerance.
 
 #### **Stage 1 Deliverable Format:**
-1. **Diagnostic Scorecard:** Table rating each of the 7 pillars ([Pass / Needs Work / Fail]).
+1. **Diagnostic Scorecard:** Table rating each of the 8 pillars ([Pass / Needs Work / Fail]).
 2. **Claim-Status Audit Table:**
    - *Claim Excerpt:* "[Quote from script]"
    - *Status:* `Supported` / `Disputed` / `Unsupported` / `Needs Citation`

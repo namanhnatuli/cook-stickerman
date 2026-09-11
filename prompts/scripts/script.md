@@ -14,9 +14,10 @@ You must review the following inputs before writing:
 - **Designated Hero Items:** {e.g., 2–3 items for comprehensive deep-dive}
 - **Target Audience:** Curious home bakers, foodies, and culinary learners.
 - **Verified Research Dossier:** {PASTE RESEARCH DOSSIER WITH KNOWLEDGE MAP & SOURCE REGISTER}
+- **Approved Narrative Outline (from outline.md):** {PASTE APPROVED OUTLINE WITH SOURCE BLOCKS & TRANSITIONS}
 
-> **CRITICAL STOP CONDITION (RESEARCH INTEGRITY):**
-> If the Verified Research Dossier or its Source Register is missing or incomplete, **DO NOT write the script**. Stop immediately and request the missing research dossier. Never draft an explainer from unverified assumptions.
+> **CRITICAL STOP CONDITION (RESEARCH & OUTLINE INTEGRITY):**
+> If the Verified Research Dossier or the Approved Narrative Outline is missing, **DO NOT write the script**. Stop immediately and request the missing inputs. A structured, source-traceable outline is mandatory before writing the full script.
 
 ---
 
@@ -78,12 +79,14 @@ Maintain visual and auditory momentum with inline `[Visual Cue: ...]` tags:
 
 ---
 
-### **STRICT FACTUAL INTEGRITY:**
-- **Dossier Compliance:** Use only claims supported by the Verified Research Dossier.
-- **Zero Hallucination / Unverified Ban:** Never narrate `[UNVERIFIED - DO NOT NARRATE]` claims.
-- **Disputed Claims Rule:** State `[DISPUTED]` claims as disputed (e.g., *"Both Mexico and Nicaragua claim its invention..."*), never as settled fact.
-- **Folklore & Marketing Rule:** State `[POPULAR MYTH]` claims explicitly as folklore, advertising campaigns, or unverified popular lore.
-- **Nuance Preservation:** Preserve the source-backed nuance of historical and scientific claims without dramatic exaggeration.
+### **STRICT FACTUAL INTEGRITY & MANDATORY RULES:**
+- **Zero Hallucination:** Use only claims supported by the Verified Research Dossier. If any claim is uncertain, leave it blank and flag with **`[NEEDS VERIFICATION]` / `[CẦN KIỂM CHỨNG]`**. Never invent facts.
+- **Unverified & Folklore Rules:** Never narrate `[UNVERIFIED - DO NOT NARRATE]` claims. State `[DISPUTED]` claims as disputed, and `[POPULAR MYTH]` explicitly as folklore or marketing campaigns.
+- **3-Point Soft CTAs:** Distribute exactly 3 subtle, conversational CTAs across the script: (1) Early (~20%) diagnostic hook, (2) Mid-roll (~50%) texture debate, (3) Outro (~90%) next topic suggestion.
+- **Concrete Specificity:** Always provide exact numbers, temperatures, ratios, years, and specific geography. Zero vague phrasing.
+- **Policy Compliance:** Replace sensitive words to avoid policy flags: knife/blade $\rightarrow$ *"tool / cutting instrument"*; blood $\rightarrow$ *"red streaks / crimson pigment"*; died/suicide $\rightarrow$ *"passed away"*.
+- **AI Graphic Disclosure:** If AI mock-ups or CGI renders are used in visual cues, include a clear on-screen disclaimer indicating it is an *illustrative concept render*.
+- **Word-Budget Tolerance:** Total actual word count must remain within **±10%** of the target budget.
 
 ---
 
