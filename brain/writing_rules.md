@@ -78,12 +78,12 @@
 
 
 1. **Sentence Length Rhythm:**
-   - The corpus demonstrates an average sentence length of **14–18 words**.
+   - Across the corpus, per-video sentence length averages range from **12.6 to 21.2 words per sentence** (roughly 14–18 words overall).
    - Scripts maintain pacing momentum by interspersing **punch sentences (3–7 words)** (*"That's it."*, *"Heat dulls it fast."*, *"The brittle crack is the feature."*) between longer mechanical explanations (18–25 words).
-   - Hard readability threshold: Sentences exceeding 28 words consistently cause vocal strain or audio drag and should be split.
+   - *Sentence Length Heuristic:* Prefer splitting sentences above 28 words when syntactic load or read-aloud testing indicates comprehension difficulty or breath strain. This is a soft editorial heuristic, not a factual or compliance gate.
 
 2. **Zero-Fluff Entry:**
-   - 100% of top-performing explainer transcripts omit personal greetings (*"Hi guys"*) and dive immediately into a counter-intuitive fact, a structural anomaly, or a category paradox within the first 10–15 seconds.
+   - All 10 sampled benchmark transcripts begin without a personal greeting (*"Hi guys"*) and dive immediately into a counter-intuitive fact, a structural anomaly, or a category paradox within the first 10–15 seconds.
 
 3. **Natural Transition Methods:**
    - Top explainers avoid artificial bridge phrases (*"Next up on our list..."*).

@@ -14,10 +14,10 @@ You must review the following inputs before writing:
 - **Designated Hero Items:** {e.g., 2–3 items for comprehensive deep-dive}
 - **Target Audience:** Curious home bakers, foodies, and culinary learners.
 - **Verified Research Dossier:** {PASTE RESEARCH DOSSIER WITH KNOWLEDGE MAP & SOURCE REGISTER}
-- **Approved Narrative Outline (from outline.md):** {PASTE APPROVED OUTLINE WITH SOURCE BLOCKS & TRANSITIONS}
+- **Approved Narrative Outline (from outline.md):** {PASTE APPROVED OUTLINE WITH TEACHING BEATS & TRANSITIONS}
 
 > **CRITICAL STOP CONDITION (RESEARCH & OUTLINE INTEGRITY):**
-> If the Verified Research Dossier or the Approved Narrative Outline is missing, **DO NOT write the script**. Stop immediately and request the missing inputs. A structured, source-traceable outline is mandatory before writing the full script.
+> If the Verified Research Dossier or the Approved Narrative Outline is missing, **DO NOT write the script**. Stop immediately and request the missing inputs. A structured, pedagogical outline is mandatory before writing the full script.
 
 ---
 
@@ -82,6 +82,7 @@ Maintain visual and auditory momentum with inline `[Visual Cue: ...]` tags:
 ### **STRICT FACTUAL INTEGRITY & PRODUCTION STANDARDS:**
 - **Zero Hallucination:** Use only claims supported by the Verified Research Dossier and Approved Outline. If any detail is uncertain, flag it with **`[NEEDS VERIFICATION]` / `[CẦN KIỂM CHỨNG]`**. Never invent facts.
 - **Claim Status Rigor:** Never narrate `[UNVERIFIED - DO NOT NARRATE]` claims. Frame `[DISPUTED]` claims as contested and `[POPULAR MYTH]` explicitly as folklore or marketing lore.
+- **Internal Claim Traceability:** Tag major factual claims in the script body with internal markers (e.g., `[C1]`, `[C2]`). The editor / voiceover artist will strip these markers before recording.
 - **Causal Pedagogy:** Ensure every item traces an authentic causal chain (`Ingredient/Technique` → `Physical/Chemical Mechanism` → `Visible Crumb/Texture` → `Baker Takeaway`).
 - **Context-Based Policy Safety:** Use accurate culinary and scientific terms naturally (knives, blades, heat, browning). Do not use bizarre euphemisms. Maintain neutral, respectful documentary framing for historical events without graphic sensationalism.
 - **Organic Audience Engagement:** Include at most one natural diagnostic question in the body and one focused outro prompt. Never force artificial CTAs to hit an arbitrary count.
@@ -97,4 +98,12 @@ Maintain visual and auditory momentum with inline `[Visual Cue: ...]` tags:
    - Governing Thesis Statement.
    - Itemized Breakdown Table with assigned Dominant Lenses and Word Allocations.
    - Runtime Recommendation (if exceeding preferred runtime).
-2. **Script Body:** Full voiceover narration with vocal inflections in bold and clear inline `[Visual Cue: ...]`.
+2. **Script Body:**
+   - Full voiceover narration with vocal inflections in bold and clear inline `[Visual Cue: ...]`.
+   - Embed internal claim markers (e.g., `[C1]`, `[C2]`) at key claims for production traceability.
+3. **Production Claim Ledger (Non-spoken Verification Map):**
+   *Provide an exhaustive mapping table connecting every tagged claim in the script to its research evidence:*
+
+   | Claim ID | Script Excerpt | Verified Dossier Claim | Source IDs | Claim Status |
+   |---|---|---|---|---|
+   | `[C1]` | *"Excerpt from script narration..."* | *Corresponding fact in dossier Knowledge Map* | `[S1]`, `[S3]` | `[CONFIRMED]` / `[DISPUTED]` |

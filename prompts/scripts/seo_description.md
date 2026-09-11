@@ -5,16 +5,20 @@ Your task is to craft an authentic, high-relevance **YouTube Video Description, 
 ---
 
 ### **REQUIRED INPUTS:**
+- **Final Approved Master Script:** {PASTE APPROVED SCRIPT}
+- **Final Approved Claim Map / Knowledge Map:** {PASTE APPROVED CLAIMS & EVIDENCE IDS}
 - **Final Video Title:** {PASTE TITLE}
 - **Governing Thesis & Core Promise:** {WHAT DOES THE VIEWER LEARN?}
 - **Final Edit Timecodes (from locked rough cut):** {PASTE TIMECODES AND BEAT NAMES}
 - **Primary Focus Culinary Topic:** {e.g., Basque Cheesecake, Chiffon Cake, Emulsion Science}
-- **Selected Research Sources (to credit in description):** {LIST KEY BOOKS / INSTITUTIONAL ARCHIVES}
+- **Selected Research Sources (actually cited in script):** {LIST KEY BOOKS / INSTITUTIONAL ARCHIVES}
+- **Visual / Diagram Disclosure Summary:** {LIST CONCEPTUAL DIAGRAMS OR SYNTHETIC ASSETS}
 - **Related Channel Video / Playlist Link:** {URL TO NEXT EPISODE OR PLAYLIST}
 
 ---
 
 ### **OFFICIAL YOUTUBE METADATA PRINCIPLES:**
+- **Strict Script Integrity:** Do not introduce factual claims, mechanisms, historical details, or promises that are absent from the Final Approved Master Script. The description must faithfully reflect what was actually produced and narrated.
 - Title, thumbnail, and description are the primary discovery drivers. Descriptions should clearly summarize the video's genuine value.
 - Tags play a minimal role in video ranking; their primary function is helping viewers find content when search keywords or cake names are commonly misspelled (e.g., *chiffon vs chifon*, *meringue vs maringue*).
 - Do not stuff descriptions with unnatural keyword lists. Use conversational, natural language.

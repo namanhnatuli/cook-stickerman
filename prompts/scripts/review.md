@@ -12,14 +12,14 @@ Do NOT immediately jump to a full rewrite. A full rewrite without an audit cause
 
 ---
 
-### **STAGE 1: DIAGNOSTIC AUDIT MATRIX (THE 7 AUDIT PILLARS)**
+### **STAGE 1: DIAGNOSTIC AUDIT MATRIX (THE 8 AUDIT PILLARS)**
 
 #### **Stage 1 Required Inputs:**
 - **Draft Script to Review:** {PASTE DRAFT SCRIPT}
 - **Verified Research Dossier (with Knowledge Map & Sources):** {PASTE RESEARCH DOSSIER}
 - **Preferred Runtime & Pacing Goals:** {e.g., ~10 mins, 145 WPM}
 
-#### **The 7 Audit Pillars:**
+#### **The 8 Audit Pillars:**
 1. **Hook & Immediate Stakes (0:00 - 0:20):** Does it open on a genuine curiosity gap or misconception without filler greetings?
 2. **Fact & Claim Integrity (Audit vs. Research Dossier):** Map every claim to:
    - `[Supported]`: Direct match in dossier with valid source ID.
@@ -37,18 +37,20 @@ Do NOT immediately jump to a full rewrite. A full rewrite without an audit cause
 5. **Structural Arc & Thesis Clarity:** Does the script have a unifying thesis, or does it feel like a random listicle? Is there a meaningful synthesis section comparing items?
 6. **Sensory & Audio Cadence:** Are sentences punchy, conversational, and rich in culinary-specific sensory language?
 7. **Pattern Interrupts & Visual Feasibility:** Are there visual shifts/interrupts every 20–30 seconds? Are cues practical for production?
-8. **Compliance with Editorial Handbook Standards:**
+8. **Compliance with Editorial Handbook Standards (including Policy/Visual Preflight):**
    - (1) Zero hallucination (uncertain items tagged `[NEEDS VERIFICATION]` / `[CẦN KIỂM CHỨNG]`).
    - (2) Audience respect (at most one natural diagnostic question in body, zero artificial CTA spam).
    - (3) Justified precision (exact numbers/dates supported by dossier; sourced ranges used where appropriate).
-   - (4) Context-based safety (natural culinary terminology preserved; neutral documentary framing for history; zero bizarre euphemisms).
-   - (5) Epistemic clarity (diagrams marked as illustrative models where needed).
+   - (4) Context-based safety preflight (ordinary culinary terminology used accurately; neutral documentary framing; zero bizarre euphemisms).
+   - (5) Epistemic clarity (diagrams identified for illustrative labeling).
    - (6) Knowledge-first pacing (essential insights preserved; runtime treated as planning guide rather than rigid hard cap).
 
 #### **Stage 1 Deliverable Format:**
 1. **Diagnostic Scorecard:** Table rating each of the 8 pillars ([Pass / Needs Work / Fail]).
-2. **Claim-Status Audit Table:**
-   - *Claim Excerpt:* "[Quote from script]"
+2. **Claim-Status Audit Table (Mapped to Evidence):**
+   - *Claim ID / Marker:* `[C1]`, `[C2]`, etc.
+   - *Script Excerpt:* "[Quote from script]"
+   - *Dossier Claim & Source IDs:* [Corresponding fact from Knowledge Map + [S1], [S3]]
    - *Status:* `Supported` / `Disputed` / `Unsupported` / `Needs Citation`
    - *Action Required:* [Keep / Add nuance / Remove / Replace with verified fact]
 3. **Knowledge Completeness Review:**
