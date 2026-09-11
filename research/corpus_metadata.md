@@ -7,54 +7,68 @@ Tài liệu này ghi lại thông tin định danh, nguồn gốc xuất xứ (p
 ## 📊 1. Bảng Danh Mục & Siêu Dữ Liệu 10 Kịch Bản Mẫu
 
 - **Thời điểm ghi nhận dữ liệu (Captured At):** 11/09/2026.
-- **Nguồn bản dịch / Transcript Source:** Trích xuất từ phụ đề tự động (YouTube Native ASR / Whisper Model).
-- **Nguyên tắc xác minh (Zero Hallucination Standard):** Chỉ ghi nhận lượt xem và ngày đăng khi có dữ liệu kiểm chứng độc lập. Các trường hợp còn lại ghi rõ `Not independently verified`, tuyệt đối không tự tạo khoảng số liệu ước tính.
+- **Công cụ tạo phụ đề:** Tệp transcript nhập khẩu cục bộ; các lỗi âm vị học phản ánh trích xuất tự động qua YouTube Native ASR hoặc Whisper Model, tuy nhiên phiên bản công cụ cụ thể cho từng tệp chưa được xác minh độc lập.
+- **Nguyên tắc xác minh (Zero Hallucination Standard):** Chỉ ghi nhận lượt xem, ngày đăng và Video ID khi có dữ liệu kiểm chứng độc lập. 8 tệp còn lại ghi nhận rõ `Not independently verified` và kênh phân bổ dựa trên tên tệp/metadata nhập khẩu chưa kiểm chứng, tuyệt đối không tự tạo số liệu ước tính.
 
-| # | Tên Tệp (`research/scripts/`) | Tiêu Đề Video | Kênh & Handle | Video ID / URL | Ngày Đăng (Published At) | Lượt Xem Khi Ghi Nhận (Captured Views) | Trạng Thái Kiểm Chứng |
+| # | Tên Tệp (`research/scripts/`) | Tiêu Đề Video Khai Báo | Phân Bổ Kênh (Channel Attribution) | Video ID / URL | Ngày Đăng (Published At) | Lượt Xem Khi Ghi Nhận (Captured Views) | Trạng Thái Kiểm Chứng |
 |---|---|---|---|---|---|---|---|
-| 1 | `Every Cake Explained in 8 Minutes.md` | Every Cake Explained in 8 Minutes | **TasteDetective** (`@TasteDetective`) | [`eIEhmK4brk0`](https://www.youtube.com/watch?v=eIEhmK4brk0) | 04/02/2026 | ~125,000 views | Đã xác minh |
-| 2 | `Every Famous Dessert Explained in 11 Minutes.md` | Every Famous Dessert Explained in 11 Minutes | **Decoded Dishes** (`@DecodedDishes`) | [`ppM3q9rlvKA`](https://www.youtube.com/watch?v=ppM3q9rlvKA) | 16/02/2026 | ~27,000 views | Đã xác minh |
-| 3 | `Every Steak Explained in 10 Minutes.md` | Every Steak Cut Explained in 10 Minutes | **Decoded Dishes** (`@DecodedDishes`) | YouTube Search ID | *Not independently verified* | *Not independently verified* | Chưa kiểm chứng độc lập |
-| 4 | `Every Style of Eggs Explained in 10 Minutes.md` | Every Style of Eggs Explained in 10 Minutes | **Decoded Dishes** (`@DecodedDishes`) | YouTube Search ID | *Not independently verified* | *Not independently verified* | Chưa kiểm chứng độc lập |
-| 5 | `Every Chocolate Explained.md` | Every Chocolate Explained in 10 Minutes | **Decoded Dishes** (`@DecodedDishes`) | YouTube Search ID | *Not independently verified* | *Not independently verified* | Chưa kiểm chứng độc lập |
-| 6 | `Every Herb Explained.md` | Every Herb Explained | **Decoded Dishes** (`@DecodedDishes`) | YouTube Search ID | *Not independently verified* | *Not independently verified* | Chưa kiểm chứng độc lập |
-| 7 | `Every Spice Explained.md` | Every Spice Explained | **Decoded Dishes** (`@DecodedDishes`) | YouTube Search ID | *Not independently verified* | *Not independently verified* | Chưa kiểm chứng độc lập |
-| 8 | `Every Water Brand Explained.md` | Every Water Brand Explained | **Decoded Dishes** (`@DecodedDishes`) | YouTube Search ID | *Not independently verified* | *Not independently verified* | Chưa kiểm chứng độc lập |
-| 9 | `All Coffees Explained.md` | All Coffee Drinks Explained | **FooDiscover** (`@FooDiscover`) | YouTube Search ID | *Not independently verified* | *Not independently verified* | Chưa kiểm chứng độc lập |
-| 10 | `All Sugars Explained.md` | All Sugars Explained | **FooDiscover** (`@FooDiscover`) | YouTube Search ID | *Not independently verified* | *Not independently verified* | Chưa kiểm chứng độc lập |
+| 1 | `Every Cake Explained in 8 Minutes.md` | Every Cake Explained in 8 Minutes | **TasteDetective** (`@TasteDetective`) | [`eIEhmK4brk0`](https://www.youtube.com/watch?v=eIEhmK4brk0) | 04/02/2026 | ~125,000 views | Đã xác minh độc lập |
+| 2 | `Every Famous Dessert Explained in 11 Minutes.md` | Every Famous Dessert Explained in 11 Minutes | **Decoded Dishes** (`@DecodedDishes`) | [`ppM3q9rlvKA`](https://www.youtube.com/watch?v=ppM3q9rlvKA) | 16/02/2026 | ~27,000 views | Đã xác minh độc lập |
+| 3 | `Every Steak Explained in 10 Minutes.md` | Every Steak Cut Explained in 10 Minutes | Claimed by imported metadata: *Decoded Dishes* | *Not independently verified* | *Not independently verified* | *Not independently verified* | Chưa kiểm chứng độc lập |
+| 4 | `Every Style of Eggs Explained in 10 Minutes.md` | Every Style of Eggs Explained in 10 Minutes | Claimed by imported metadata: *Decoded Dishes* | *Not independently verified* | *Not independently verified* | *Not independently verified* | Chưa kiểm chứng độc lập |
+| 5 | `Every Chocolate Explained.md` | Every Chocolate Explained in 10 Minutes | Claimed by imported metadata: *Decoded Dishes* | *Not independently verified* | *Not independently verified* | *Not independently verified* | Chưa kiểm chứng độc lập |
+| 6 | `Every Herb Explained.md` | Every Herb Explained | Claimed by imported metadata: *Decoded Dishes* | *Not independently verified* | *Not independently verified* | *Not independently verified* | Chưa kiểm chứng độc lập |
+| 7 | `Every Spice Explained.md` | Every Spice Explained | Claimed by imported metadata: *Decoded Dishes* | *Not independently verified* | *Not independently verified* | *Not independently verified* | Chưa kiểm chứng độc lập |
+| 8 | `Every Water Brand Explained.md` | Every Water Brand Explained | Claimed by imported metadata: *Decoded Dishes* | *Not independently verified* | *Not independently verified* | *Not independently verified* | Chưa kiểm chứng độc lập |
+| 9 | `All Coffees Explained.md` | All Coffee Drinks Explained | Claimed by imported metadata: *FooDiscover* | *Not independently verified* | *Not independently verified* | *Not independently verified* | Chưa kiểm chứng độc lập |
+| 10 | `All Sugars Explained.md` | All Sugars Explained | Claimed by imported metadata: *FooDiscover* | *Not independently verified* | *Not independently verified* | *Not independently verified* | Chưa kiểm chứng độc lập |
 
 ---
 
-## 📈 2. Phương Pháp Đo Lường Thực Nghiệm & Phân Tích Dữ Liệu Nội Bộ
+## 📈 2. Phương Pháp Đo Lường Thực Nghiệm & Tái Lập Thống Kê (Reproducible Methodology)
 
-Quét toàn bộ 10 tệp văn bản trong thư mục `research/scripts/` (sau khi lọc bỏ các nhãn chú thích âm nhạc như `[music]`):
+Số liệu dưới đây được tạo tự động bởi script [`research/analyze_corpus.py`](analyze_corpus.py) chạy trên Python 3 vào ngày **11/09/2026**.
 
-- **Tổng số từ phân tích:** 23.376 từ.
-- **Tổng số câu phân tích (dựa trên dấu ngắt câu `.`, `!`, `?`):** 1.428 câu.
+### Quy Tắc Xử Lý Dữ Liệu (Tokenization Rules):
+1. **Lọc thẻ âm thanh:** Loại bỏ toàn bộ nhãn âm thanh không đọc như `[music]`.
+2. **Bảo vệ số thập phân:** Số có dấu chấm (ví dụ: `2.3 million`, `120° C`) được bảo vệ để không bị ngắt câu sai.
+3. **Bảo vệ từ viết tắt:** Các từ viết tắt thông dụng (`vs.`, `etc.`, `B.C.E.`, `C.E.`, `U.S.`, `Dr.`, `Mr.`) được bảo vệ dấu chấm.
+4. **Ngắt câu:** Tách câu theo dấu ngắt chuẩn (`.`, `!`, `?`). Bỏ qua các chuỗi rỗng.
+5. **Đếm từ:** Tách theo khoảng trắng (`split()`) sau khi hoàn nguyên các token được bảo vệ.
 
-### A. Thống Kê Độ Dài Câu (Sentence Length Metrics)
-- **Overall Mean (Số từ trung bình toàn bộ corpus):** **16.4 từ/câu**.
-- **Overall Median (Trung vị toàn bộ corpus):** **16.0 từ/câu**.
-- **Per-Video Mean Range (Dải trung bình từng video):** **12.4 – 21.2 từ/câu**.
-  - Ngắn nhất: `Every Famous Dessert Explained in 11 Minutes.md` (Trung bình: **12.4 từ/câu**, Trung vị: **12.0 từ/câu**).
-  - Nhịp trung bình nhanh: `Every Cake Explained in 8 Minutes.md` (Trung bình: **13.3 từ/câu**, Trung vị: **14.0 từ/câu**).
-  - Dài nhất: `Every Style of Eggs Explained in 10 Minutes.md` (Trung bình: **21.2 từ/câu**, Trung vị: **21.0 từ/câu**).
-- **Phân bố câu dài (>28 từ):** Có 118 / 1.428 câu (~8.3%) vượt quá 28 từ.
-- **Kết luận biên tập:** Ngưỡng 28 từ là **Soft Editorial Heuristic** (khuyến nghị biên tập để giọng đọc tự nhiên, tránh hụt hơi), không phải giới hạn kiểm duyệt cứng.
+### Bảng Kết Quả Đo Lường Chi Tiết:
 
-### B. Hành Vi Mở Đầu (Intro Hook Behavior)
-- **10/10 tệp kịch bản (100%)** bắt đầu ngay lập tức bằng việc gọi tên chủ thể hoặc nêu trực tiếp nghịch lý/cơ chế bất ngờ.
-- **Zero greetings:** Hoàn toàn không có lời chào hỏi mang tính cá nhân (*"Hi guys"*, *"Welcome back"*).
-- *Lưu ý về mốc thời gian:* Do dữ liệu là văn bản transcript thô chưa căn chỉnh audio waveform, quy tắc "trong 10–15 giây đầu" là mục tiêu dựng phim dự kiến, không phải số liệu đo được trực tiếp từ văn bản.
+| # | Tên Tệp | Số Từ | Số Câu | Trung Bình (Mean) | Trung Vị (Median) | Số Câu >28 từ | % Câu >28 từ |
+|---|---|---|---|---|---|---|---|
+| 1 | `All Coffees Explained.md` | 5,962 | 348 | 17.1 | 17.0 | 46 | 13.2% |
+| 2 | `All Sugars Explained.md` | 3,483 | 198 | 17.6 | 17.5 | 16 | 8.1% |
+| 3 | `Every Cake Explained in 8 Minutes.md` | 1,088 | 82 | 13.3 | 13.5 | 1 | 1.2% |
+| 4 | `Every Chocolate Explained.md` | 1,110 | 68 | 16.3 | 17.0 | 3 | 4.4% |
+| 5 | `Every Famous Dessert Explained in 11 Minutes.md` | 1,553 | 125 | 12.4 | 12.0 | 1 | 0.8% |
+| 6 | `Every Herb Explained.md` | 1,502 | 110 | 13.7 | 12.5 | 7 | 6.4% |
+| 7 | `Every Spice Explained.md` | 2,743 | 172 | 15.9 | 15.0 | 12 | 7.0% |
+| 8 | `Every Steak Explained in 10 Minutes.md` | 1,501 | 80 | 18.8 | 18.0 | 7 | 8.8% |
+| 9 | `Every Style of Eggs Explained in 10 Minutes.md` | 1,525 | 72 | 21.2 | 21.0 | 7 | 9.7% |
+| 10 | `Every Water Brand Explained.md` | 2,911 | 169 | 17.2 | 16.0 | 18 | 10.7% |
+| **Tổng** | **Toàn bộ Corpus (10 video)** | **23,378** | **1,424** | **16.4** | **16.0** | **118** | **8.3%** |
 
-### C. Khảo Sát Lời Kêu Gọi Tương Tác (Call-to-Action)
-- **6/10 kịch bản:** Hoàn toàn **không có bất kỳ CTA nào** trong toàn bộ văn bản.
-- **4/10 kịch bản:** Có từ 1 đến 2 CTA nhẹ nhàng, đặt tại Outro (hỏi ý kiến về chủ đề tiếp theo).
-- **Zero transcripts** có cấu trúc "3 CTA trải đều Đầu – Giữa – Cuối".
+### Kết Luận Biên Tập Từ Dữ Liệu:
+- **Mean & Median:** Trung bình toàn corpus là **16.4 từ/câu**, trung vị là **16.0 từ/câu**. Dải trung bình dao động từ **12.4** (`Every Famous Dessert`) đến **21.2** (`Every Style of Eggs`).
+- **Ngưỡng 28 từ:** Chỉ chiếm **8.3%** tổng số câu (118/1.424 câu). Đây là **Soft Editorial Heuristic**, chỉ dùng để rà soát các câu quá dài gây khó thở khi thu âm, không phải cổng chặn bắt buộc.
+- **Hành vi mở đầu:** 10/10 tệp (100%) vào thẳng chủ thể, hoàn toàn không có lời chào cá nhân (*"Hi guys"*). Do transcript thô chưa căn chỉnh waveform, quy tắc "trong 10–15s đầu" là mục tiêu dựng rough cut, không phải số liệu đo từ văn bản.
+- **Tần suất CTA:** 6/10 kịch bản có 0 CTA; 4/10 kịch bản có 1–2 CTA nhẹ ở outro; 0 kịch bản nào dùng công thức "3 CTA trải đều".
 
-### D. Kỹ Thuật Chuyển Đoạn Quan Sát Được
-1. **The Noun Drop:** Chấm câu dứt khoát kết thúc một đối tượng, dừng nghỉ, rồi gọi tên đối tượng kế tiếp (*"That's it."* $\rightarrow$ *"Pound cake."*).
-2. **The Boundary Shift:** Sử dụng sự thay đổi của biến số nguyên liệu làm cầu nối sang nhóm tiếp theo (*"Where angel food relies purely on egg whites, chiffon reintroduces fat—in liquid form"*).
+### Kỹ Thuật Chuyển Đoạn Quan Sát Được:
+1. **The Boundary Shift (Biến đổi ranh giới nguyên liệu):**
+   - *Trích dẫn nguyên văn từ corpus (`All Sugars Explained.md`, đoạn 2):*
+     > *"Brown sugar is essentially white sugar that either never had all its molasses removed or had molasses added back in after refining."*
+   - *Ví dụ minh họa biên tập (Constructed editorial example — not a verbatim quote):*
+     > *"Where angel food relies purely on egg whites, chiffon reintroduces fat—in liquid form."*
+2. **The Noun Drop / The Hard Shift (Chuyển tiếp gãy gọn):**
+   - *Trích dẫn nguyên văn từ corpus (`Every Famous Dessert Explained in 11 Minutes.md`):*
+     > *"Move the ratio even slightly and you land in a different dessert. Tiramisu is a cold layered Italian dessert built from espresso soaked lady fingers..."*
+   - *Ví dụ minh họa biên tập (Constructed editorial example — not a verbatim quote):*
+     > *"That's it. Pound cake."*
 
 ---
 
@@ -63,15 +77,15 @@ Quét toàn bộ 10 tệp văn bản trong thư mục `research/scripts/` (sau k
 ### A. Bản Chất Dữ Liệu
 Văn bản trong `research/scripts/` là phụ đề nhận diện giọng nói tự động, chứa nhiều lỗi nhận diện âm vị đối với thuật ngữ nước ngoài và tên danh nhân.
 
-### B. Các Lỗi ASR Điển Hình
-- *"Conrad von Hton"* $\rightarrow$ **Coenraad Johannes van Houten** (nhà hóa học Hà Lan phát minh bột ca-cao kiềm hóa năm 1828).
-- *"Waldorf Atoria"* $\rightarrow$ **Waldorf Astoria** (khách sạn gắn với truyền thuyết bánh Red Velvet).
-- *"Juliana Rad" / "Jacob Kristoff Rad"* $\rightarrow$ **Jakub Kryštof Rad** (phát minh viên đường năm 1841).
-- *"Muan Vanang"* $\rightarrow$ **Nguyễn Văn Giảng** (sáng tạo món Cà phê trứng Giảng năm 1946).
+### B. Các Lỗi ASR Điển Hình Đã Nhận Diện
+- *"Conrad von Hton"* $\rightarrow$ **Coenraad Johannes van Houten** (bột ca-cao kiềm hóa 1828).
+- *"Waldorf Atoria"* $\rightarrow$ **Waldorf Astoria** (truyền thuyết bánh Red Velvet).
+- *"Juliana Rad" / "Jacob Kristoff Rad"* $\rightarrow$ **Jakub Kryštof Rad** (phát minh viên đường 1841).
+- *"Muan Vanang"* $\rightarrow$ **Nguyễn Văn Giảng** (Cà phê trứng 1946).
 - *"M foye"* $\rightarrow$ **Mille-feuille** (bánh ngàn lớp).
-- *"Eclair's are shoe pastries"* $\rightarrow$ **Choux pastry** (bột choux nở bằng hơi nước).
+- *"Eclair's are shoe pastries"* $\rightarrow$ **Choux pastry** (bột choux nở hơi nước).
 - *"maser ponyet cream"* $\rightarrow$ **Mascarpone cream** (phô mai Mascarpone).
-- *"filow dough"* $\rightarrow$ **Phyllo dough** (bột ngàn lớp mỏng trong Baklava).
+- *"filow dough"* $\rightarrow$ **Phyllo dough** (bột ngàn lớp Baklava).
 - *"used"* $\rightarrow$ **Leipäjuusto** (phô mai cà phê Phần Lan).
 - *"turbanado, dearara, musavado"* $\rightarrow$ **Turbinado, Demerara, Muscovado**.
 - *"and7s"* / *"and50s"* $\rightarrow$ 1970s / 1950s.
@@ -81,4 +95,4 @@ Văn bản trong `research/scripts/` là phụ đề nhận diện giọng nói 
 ## 🔒 4. QUY TẮC BẮT BUỘC DÀNH CHO BIÊN TẬP VIÊN
 
 > 1. **TUYỆT ĐỐI KHÔNG DÙNG CORPUS ĐỂ FACT-CHECK:** Các file transcript mẫu chỉ phản ánh cấu trúc nhịp điệu và văn phong, không phải tài liệu khoa học hay lịch sử đã kiểm chứng. Mọi kiến thức cho video mới phải nghiên cứu độc lập ở Bước 2 (`research.md`).
-> 2. **DÙNG ĐÚNG MỤC ĐÍCH:** Chỉ đối chiếu cách ngắt câu, đan xen câu ngắn và nhịp chuyển đoạn mượt mà.
+> 2. **DÙNG ĐÚNG MỤC ĐÍCH:** Chỉ đối chiếu cách ngắt câu, đan xen câu ngắn và nhịp chuyển đoạn tự nhiên.

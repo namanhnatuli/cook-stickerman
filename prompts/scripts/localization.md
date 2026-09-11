@@ -62,20 +62,37 @@ This is **cultural transcreation**, preserving the core pedagogical insights, na
 | *Beat name* | *0:45 (45s)* | *44s* | *-1s* | *On target; natural cadence* |
 | *Deep-dive beat* | *2:10 (130s)* | *134s* | *+4s* | *Tighten syntax or reallocate 4s pause from preceding beat* |
 
-#### **4. Transcreated Voiceover Script:**
-Format by chapter/beat with clear editorial cues:
+#### **4. Clean Localized Recording Script (For Voiceover Talent / TTS):**
+*(Zero bracketed claim markers, zero visual cues, zero metadata tags. Pure native spoken text organized by locked chapter timecodes.)*
+
+```markdown
+### [Locked Master Timecode, e.g., 0:00 - 0:45] - [Beat Name in Target Language]
+[Pure localized voiceover narration with vocal inflections in bold]
+```
+
+#### **5. Annotated Localized Production Script (For Video Editors & Subtitling):**
+*(Contains inline [Visual Cue: ...] tags and exhaustive internal [C1], [C2] claim markers corresponding to master script.)*
 
 ```markdown
 ### [Locked Master Timecode, e.g., 0:00 - 0:45] - [Beat Name in Target Language]
 **[Visual Cue: ...]**
-[Transcreated native voiceover narration]
+[Transcreated native voiceover with [C1], [C2] markers embedded]
 ```
 
-#### **5. Cultural & Pronunciation Glossary:**
+#### **6. Localized Claim Fidelity Ledger (Cross-Language Knowledge Audit):**
+> **STRICT COMPLIANCE MANDATE:**
+> Every single Claim ID from the approved Canonical Master Freeze package must appear **exactly once** in this ledger. Verify that no negations were flipped, no mechanisms were weakened, and all temperature/weight conversions are mathematically accurate.
+
+| Master Claim ID | Master Claim Meaning | Localized Script Line | Unit Conversion (if applicable) | Fidelity Status ([Preserved] / [Adapted] / [Flagged]) |
+|---|---|---|---|---|
+| `[C1]` | *Original physical mechanism* | *Dòng dịch bản địa tương ứng* | *350°F → 177°C* | `[Preserved]` |
+| `[C2]` | *Historical date / inventor* | *Dòng dịch bản địa tương ứng* | *N/A* | `[Preserved]` |
+
+#### **7. Cultural & Pronunciation Glossary:**
 - **Key Culinary Terms:** List of technical food science terms and how they were localized.
 - **Pronunciation Guide:** Proper phonetic guide for foreign pastry names (e.g., *Chiffon, Basque, Kouign-amann*).
 
-#### **6. Native Quality Assurance (QA) Sign-Off Block:**
+#### **8. Native Quality Assurance (QA) Sign-Off Block:**
 *(AI draft must NOT self-certify native human sign-off; record status transparently)*
 ```markdown
 - QA Status: [AI Draft — Pending Native Review]
@@ -83,6 +100,6 @@ Format by chapter/beat with clear editorial cues:
 - Review Date: [YYYY-MM-DD]
 - Terminology Approved: [ ] Yes  [ ] Pending
 - Unit Conversion Checked: [ ] Yes  [ ] Pending
-- Essential Insight Back-check: [ ] Yes  [ ] Pending
-- Audio Sync & Breath Pacing Checked: [ ] Yes  [ ] Pending
+- Claim Fidelity Ledger Verified: [ ] Yes  [ ] Pending (All master Claim IDs accounted for with zero meaning distortion)
+- Audio Sync & Breath Pacing Checked: [ ] Yes  [ ] Pending (Verified on rendered audio track against master video)
 ```

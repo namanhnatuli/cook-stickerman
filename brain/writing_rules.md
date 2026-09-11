@@ -86,8 +86,8 @@
    - All 10 sampled benchmark transcripts begin without a personal greeting (*"Hi guys"*) and move immediately into the subject, a counter-intuitive anomaly, or a category paradox.
 
 3. **Natural Transition Methods:**
-   - Top explainers avoid artificial bridge phrases (*"Next up on our list..."*).
-   - They rely on **The Boundary Shift** (showing how changing one ingredient ratio creates a new category) and **The Noun Drop** (punctuating an item firmly, pausing, and stating the next subject).
+   - Sampled explainers avoid artificial listicle bridge phrases (*"Next up on our list..."*).
+   - They rely on **The Boundary Shift** (showing how changing one ingredient ratio creates a new category; e.g., verbatim from `All Sugars Explained.md`: *"Brown sugar is essentially white sugar that either never had all its molasses removed or had molasses added back in..."*) and **The Noun Drop / The Hard Shift** (punctuating an item firmly, pausing, and stating the next subject; e.g., verbatim from `Every Famous Dessert Explained in 11 Minutes.md`: *"Move the ratio even slightly and you land in a different dessert. Tiramisu is a cold layered Italian dessert..."*).
 
 ---
 
