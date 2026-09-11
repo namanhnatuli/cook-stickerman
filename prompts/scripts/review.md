@@ -37,13 +37,13 @@ Do NOT immediately jump to a full rewrite. A full rewrite without an audit cause
 5. **Structural Arc & Thesis Clarity:** Does the script have a unifying thesis, or does it feel like a random listicle? Is there a meaningful synthesis section comparing items?
 6. **Sensory & Audio Cadence:** Are sentences punchy, conversational, and rich in culinary-specific sensory language?
 7. **Pattern Interrupts & Visual Feasibility:** Are there visual shifts/interrupts every 20–30 seconds? Are cues practical for production?
-8. **Compliance with the 6 Mandatory Laws:**
+8. **Compliance with Editorial Handbook Standards:**
    - (1) Zero hallucination (uncertain items tagged `[NEEDS VERIFICATION]` / `[CẦN KIỂM CHỨNG]`).
-   - (2) Exactly 3 natural soft CTAs (early, mid, outro).
-   - (3) High specificity (exact numbers, years, temperatures, geography; zero vague phrasing).
-   - (4) Policy safety (zero knives/blood/suicide terms; replaced with safe euphemisms).
-   - (5) AI graphic disclosures embedded where applicable.
-   - (6) Actual word count within ±10% budget tolerance.
+   - (2) Audience respect (at most one natural diagnostic question in body, zero artificial CTA spam).
+   - (3) Justified precision (exact numbers/dates supported by dossier; sourced ranges used where appropriate).
+   - (4) Context-based safety (natural culinary terminology preserved; neutral documentary framing for history; zero bizarre euphemisms).
+   - (5) Epistemic clarity (diagrams marked as illustrative models where needed).
+   - (6) Knowledge-first pacing (essential insights preserved; runtime treated as planning guide rather than rigid hard cap).
 
 #### **Stage 1 Deliverable Format:**
 1. **Diagnostic Scorecard:** Table rating each of the 8 pillars ([Pass / Needs Work / Fail]).

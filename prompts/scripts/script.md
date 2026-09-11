@@ -79,14 +79,14 @@ Maintain visual and auditory momentum with inline `[Visual Cue: ...]` tags:
 
 ---
 
-### **STRICT FACTUAL INTEGRITY & MANDATORY RULES:**
-- **Zero Hallucination:** Use only claims supported by the Verified Research Dossier. If any claim is uncertain, leave it blank and flag with **`[NEEDS VERIFICATION]` / `[CẦN KIỂM CHỨNG]`**. Never invent facts.
-- **Unverified & Folklore Rules:** Never narrate `[UNVERIFIED - DO NOT NARRATE]` claims. State `[DISPUTED]` claims as disputed, and `[POPULAR MYTH]` explicitly as folklore or marketing campaigns.
-- **3-Point Soft CTAs:** Distribute exactly 3 subtle, conversational CTAs across the script: (1) Early (~20%) diagnostic hook, (2) Mid-roll (~50%) texture debate, (3) Outro (~90%) next topic suggestion.
-- **Concrete Specificity:** Always provide exact numbers, temperatures, ratios, years, and specific geography. Zero vague phrasing.
-- **Policy Compliance:** Replace sensitive words to avoid policy flags: knife/blade $\rightarrow$ *"tool / cutting instrument"*; blood $\rightarrow$ *"red streaks / crimson pigment"*; died/suicide $\rightarrow$ *"passed away"*.
-- **AI Graphic Disclosure:** If AI mock-ups or CGI renders are used in visual cues, include a clear on-screen disclaimer indicating it is an *illustrative concept render*.
-- **Word-Budget Tolerance:** Total actual word count must remain within **±10%** of the target budget.
+### **STRICT FACTUAL INTEGRITY & PRODUCTION STANDARDS:**
+- **Zero Hallucination:** Use only claims supported by the Verified Research Dossier and Approved Outline. If any detail is uncertain, flag it with **`[NEEDS VERIFICATION]` / `[CẦN KIỂM CHỨNG]`**. Never invent facts.
+- **Claim Status Rigor:** Never narrate `[UNVERIFIED - DO NOT NARRATE]` claims. Frame `[DISPUTED]` claims as contested and `[POPULAR MYTH]` explicitly as folklore or marketing lore.
+- **Causal Pedagogy:** Ensure every item traces an authentic causal chain (`Ingredient/Technique` → `Physical/Chemical Mechanism` → `Visible Crumb/Texture` → `Baker Takeaway`).
+- **Context-Based Policy Safety:** Use accurate culinary and scientific terms naturally (knives, blades, heat, browning). Do not use bizarre euphemisms. Maintain neutral, respectful documentary framing for historical events without graphic sensationalism.
+- **Organic Audience Engagement:** Include at most one natural diagnostic question in the body and one focused outro prompt. Never force artificial CTAs to hit an arbitrary count.
+- **Justified Precision:** State exact numbers, dates, and temperatures only when verified and scientifically meaningful; use sourced ranges where appropriate.
+- **Estimated Beat Timecodes:** Output projected timecodes (e.g., `[0:00]`, `[1:15]`) for each section to facilitate rough cut assembly.
 
 ---
 
