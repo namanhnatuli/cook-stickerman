@@ -8,11 +8,10 @@ This is **cultural transcreation**, preserving the core pedagogical insights, na
 
 ### **REQUIRED INPUT PACKAGE:**
 - **Target Language & Locale:** {e.g., Vietnamese, Spanish, Japanese, German, etc.}
-- **Master Final Script & Locked Timecodes:** {PASTE FINAL ENGLISH SCRIPT}
-- **Master Video Title & Variations:** {PASTE TITLES}
-- **Master Video Description & Chapters:** {PASTE DESCRIPTION}
-- **Master Thumbnail Text Overlay:** {e.g., "WHY IT SINKS"}
-- **Governing Thesis & Core Essential Insights:** {LIST KEY PEDAGOGICAL TAKEAWAYS}
+- **Approved Canonical Master Freeze Package (`11_canonical_master_freeze.md`):** {PASTE ENTIRE FROZEN PACKAGE: Clean Recording Script, Annotated Script, Locked Timecodes, Official Title, Description, Chapters, and Thumbnail Text}
+
+> **CRITICAL STOP CONDITION (CANONICAL FREEZE INTEGRITY):**
+> If the approved Canonical Master Freeze package (`11_canonical_master_freeze.md`) is missing, **DO NOT run localization**. Stop immediately and request the frozen master release. Localization must never run on unapproved draft scripts or provisional timecodes.
 
 ---
 
@@ -22,17 +21,18 @@ This is **cultural transcreation**, preserving the core pedagogical insights, na
    - **Never delete, truncate, or dilute an Essential Insight or causal chain step solely to hit an audio timebox.** The baker's takeaway and physical explanation must remain intact, scientifically accurate, and lucid.
 
 2. **Multi-Language Timeline Discipline (Locked Master Constraint):**
-   - Because YouTube Multi-Language Audio tracks share a single, synchronized video timeline, you **cannot change the locked master video timecodes** or request visual extensions for individual languages.
+   - Because YouTube Multi-Language Audio tracks share a single, synchronized video timeline, you **cannot change the locked master video timecodes** or alter the visual edit. The master timeline is frozen.
    - Video chapters must maintain their exact, absolute timestamps from the master video; only the chapter titles are translated.
    - The total localized audio track duration must roughly match the master video timeline.
-   - For segment-level pacing adjustments:
-     1. Translate completely and naturally using authentic target language idioms.
-     2. Estimate spoken duration based on language-specific narration cadence.
-     3. If an initial draft exceeds the segment window:
-        - Tighten native syntax and trim conversational filler without weakening the causal chain (`Condition` → `Mechanism` → `Result`).
-        - Redistribute breath pauses across adjacent beats where timing headroom exists.
-        - If still tight by >3s, flag for a **Human Dubbing Rewrite Pass** or decide whether the master edit should be adjusted prior to publishing.
-     4. *Note:* Creating an entirely separate video upload (separate video ID) is reserved only for rare cases where localized on-screen text graphics or cultural visuals necessitate a distinct visual edit.
+   - **Production Loopback Rule:** If an insurmountable timing or cultural conflict makes dubbing impossible without altering the visual timeline, you cannot hack the timeline here. You must trigger a formal **Production Loopback**: return to Step 7 (Rough Cut / Timing Lock) → Step 9 (SEO) → Step 10 (Policy Audit) → Step 11 (Re-freeze Canonical Master) before resuming localization.
+   - **Segment-Level Pacing & Thresholds:**
+     - *Flagging Threshold:* Flag any segment where `|Estimated Localized Duration - Master Duration| > max(1.5 seconds, 5% of segment duration)`.
+     - *Resolution Hierarchy:*
+       1. Translate completely and naturally using authentic target language idioms.
+       2. Tighten native syntax and trim conversational filler without weakening the causal chain (`Condition` → `Mechanism` → `Result`).
+       3. Redistribute breath pauses across adjacent beats where timing headroom exists.
+       4. If still exceeding threshold, flag for a **Human Dubbing Rewrite Pass** to condense phrasing while preserving 100% of the scientific mechanism.
+       5. **Physical Audio Verification:** Spoken sync and breath pacing must be verified using rendered/recorded vocal audio against the master timeline, not just text-syllable estimates.
 
 3. **Measurement Units & Technical Terminology:**
    - Localize units appropriately for the target market (e.g., Celsius vs. Fahrenheit, grams vs. ounces).
@@ -48,8 +48,12 @@ This is **cultural transcreation**, preserving the core pedagogical insights, na
 - **Localized Thumbnail Text Overlay (2–4 words max):** [Punchy, high-contrast native text]
 
 #### **2. Localized Video Description & Chapters:**
-- Fully localized 200–300 word description including opening value promise, related resources, and clickable chapter timestamps.
-- **Strict Timestamp Rule:** Preserve exact master timestamps (e.g., `0:00`, `0:45`, `1:30`); translate only the chapter names.
+- Fully localized native video description adhering to platform structure and natural language density (do NOT force a 200–300 English word-count onto non-word character systems like Japanese, Chinese, or Thai):
+  - *Opening Value Promise:* 2–3 sentences highlighting the core takeaway.
+  - *Clickable Chapters:* Strictly preserving exact master timestamps (`0:00`, `0:45`, `1:30`), translating only the chapter titles.
+  - *Sourced Educational Resources & Links.*
+  - *Concise Outro Engagement Prompt.*
+  - *Platform Limit:* Must fit comfortably within YouTube's 5,000-character description limit.
 
 #### **3. Timing & Pacing Reconciliation Table:**
 

@@ -70,8 +70,8 @@ Select the best lens to guide each item's unique entry angle:
 
 ---
 
-### **DYNAMIC RETENTION BEATS (Pattern Interrupts Every 20–30 Seconds):**
-Maintain visual and auditory momentum with inline `[Visual Cue: ...]` tags:
+### **DYNAMIC VISUAL CUES & RETENTION FLOW:**
+Use visual changes when they clarify a physical mechanism, comparison, historical evidence, or conceptual transition. (Note: The 20–30 second interval is an attention diagnostic, not a mandatory insertion schedule; never interrupt a lucid explanation solely to satisfy a quota). Maintain visual momentum with inline `[Visual Cue: ...]` tags:
 - Cross-section diagrams, 3D cutaways, or ingredient proportion scales.
 - Archival documents, vintage advertisements, or patent sketches.
 - "Myth Busted", "Science Fact", or "Point of Failure" graphic overlays.
@@ -82,7 +82,7 @@ Maintain visual and auditory momentum with inline `[Visual Cue: ...]` tags:
 ### **STRICT FACTUAL INTEGRITY & PRODUCTION STANDARDS:**
 - **Zero Hallucination:** Use only claims supported by the Verified Research Dossier and Approved Outline. If any detail is uncertain, flag it with **`[NEEDS VERIFICATION]` / `[CẦN KIỂM CHỨNG]`**. Never invent facts.
 - **Claim Status Rigor:** Never narrate `[UNVERIFIED - DO NOT NARRATE]` claims. Frame `[DISPUTED]` claims as contested and `[POPULAR MYTH]` explicitly as folklore or marketing lore.
-- **Internal Claim Traceability:** Tag major factual claims in the script body with internal markers (e.g., `[C1]`, `[C2]`). The editor / voiceover artist will strip these markers before recording.
+- **Exhaustive Claim Traceability:** Tag **every externally verifiable factual claim** (scientific mechanisms, temperatures, dates, chemical reactions, historical events) in the annotated script with unique internal markers (`[C1]`, `[C2]`, etc.). Zero duplicate Claim IDs and zero orphan markers.
 - **Causal Pedagogy:** Ensure every item traces an authentic causal chain (`Ingredient/Technique` → `Physical/Chemical Mechanism` → `Visible Crumb/Texture` → `Baker Takeaway`).
 - **Context-Based Policy Safety:** Use accurate culinary and scientific terms naturally (knives, blades, heat, browning). Do not use bizarre euphemisms. Maintain neutral, respectful documentary framing for historical events without graphic sensationalism.
 - **Organic Audience Engagement:** Include at most one natural diagnostic question in the body and one focused outro prompt. Never force artificial CTAs to hit an arbitrary count.
@@ -98,11 +98,13 @@ Maintain visual and auditory momentum with inline `[Visual Cue: ...]` tags:
    - Governing Thesis Statement.
    - Itemized Breakdown Table with assigned Dominant Lenses and Word Allocations.
    - Runtime Recommendation (if exceeding preferred runtime).
-2. **Script Body:**
-   - Full voiceover narration with vocal inflections in bold and clear inline `[Visual Cue: ...]`.
-   - Embed internal claim markers (e.g., `[C1]`, `[C2]`) at key claims for production traceability.
-3. **Production Claim Ledger (Non-spoken Verification Map):**
-   *Provide an exhaustive mapping table connecting every tagged claim in the script to its research evidence:*
+2. **Clean Recording Script (For Voiceover Talent & TTS):**
+   - Pure spoken text organized by section with bold vocal inflections.
+   - Completely stripped of bracketed claim markers (`[C1]`) and visual tags (`[Visual Cue: ...]`) to ensure clean recording without accidental vocalization of metadata.
+3. **Annotated Production Script (For Video Editors & Animators):**
+   - Complete voiceover text containing all inline `[Visual Cue: ...]` tags and exhaustive internal claim markers (`[C1]`, `[C2]`).
+4. **Production Claim Ledger (Exhaustive Verification Map):**
+   *Provide an exhaustive mapping table connecting EVERY tagged claim `[C1]...[Cn]` in the annotated script to its verified research evidence. Ensure zero orphan markers:*
 
    | Claim ID | Script Excerpt | Verified Dossier Claim | Source IDs | Claim Status |
    |---|---|---|---|---|

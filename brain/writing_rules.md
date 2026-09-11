@@ -70,20 +70,20 @@
 
 ---
 
-## SECTION D: CORPUS OBSERVATIONS (PATTERNS FROM HIGH-PERFORMING EXPLAINERS)
-*Empirical observations derived from analysis of 10 high-performing culinary explainer transcripts in `research/scripts/` (see full benchmark provenance, view counts, and ASR transcription caveats in [`research/corpus_metadata.md`](../research/corpus_metadata.md)).*
+## SECTION D: CORPUS OBSERVATIONS (PATTERNS FROM SAMPLED BENCHMARK EXPLAINERS)
+*Empirical observations derived from analysis of 10 sampled culinary explainer transcripts in `research/scripts/` (see full benchmark provenance, view counts, and ASR transcription caveats in [`research/corpus_metadata.md`](../research/corpus_metadata.md)).*
 
 > **CRITICAL DATA NOTE ON CORPUS TRANSCRIPTS:**
 > The transcripts in `research/scripts/` are automated speech recognition (ASR) captures containing known phonetic errors (e.g., misheard inventor names and scrambled pastry terms). Use these scripts **strictly for structural pacing, transition mechanics, and information cadence analysis**, never as primary factual sources for baking science.
 
 
 1. **Sentence Length Rhythm:**
-   - Across the corpus, per-video sentence length averages range from **12.6 to 21.2 words per sentence** (roughly 14–18 words overall).
+   - Across the corpus, per-video sentence length averages range from **12.4 to 21.2 words per sentence** (overall mean: **16.4**, overall median: **16.0**).
    - Scripts maintain pacing momentum by interspersing **punch sentences (3–7 words)** (*"That's it."*, *"Heat dulls it fast."*, *"The brittle crack is the feature."*) between longer mechanical explanations (18–25 words).
    - *Sentence Length Heuristic:* Prefer splitting sentences above 28 words when syntactic load or read-aloud testing indicates comprehension difficulty or breath strain. This is a soft editorial heuristic, not a factual or compliance gate.
 
 2. **Zero-Fluff Entry:**
-   - All 10 sampled benchmark transcripts begin without a personal greeting (*"Hi guys"*) and dive immediately into a counter-intuitive fact, a structural anomaly, or a category paradox within the first 10–15 seconds.
+   - All 10 sampled benchmark transcripts begin without a personal greeting (*"Hi guys"*) and move immediately into the subject, a counter-intuitive anomaly, or a category paradox.
 
 3. **Natural Transition Methods:**
    - Top explainers avoid artificial bridge phrases (*"Next up on our list..."*).

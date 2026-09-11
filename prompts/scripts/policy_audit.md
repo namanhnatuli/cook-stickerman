@@ -9,11 +9,18 @@ You evaluate whether content genuinely complies with official YouTube Community 
 ### **REQUIRED INPUT PACKAGE:**
 - **Final Script:** {PASTE SCRIPT}
 - **Final Title & Title Variations:** {PASTE TITLES}
-- **Thumbnail Concept & Image Description:** {PASTE THUMBNAIL DESCRIPTION}
+- **Final Thumbnail Image / Render File & Text Overlay:** {PASTE THUMBNAIL IMAGE PATH OR VISUAL SPECIFICATION}
+- **Final Visual Log / Asset Plan:** {LIST KEY B-ROLL, INFOGRAPHICS, AND CUTAWAYS}
 - **Video Description & Chapters:** {PASTE DESCRIPTION}
 - **Keywords / Tags:** {PASTE TAGS}
 - **Archival / Graphic Footage Notes:** {LIST SENSITIVE HISTORICAL IMAGES OR B-ROLL}
-- **AI / Altered Content Usage:** {INDICATE IF REALISTIC SYNTHETIC VISUALS ARE INCLUDED}
+- **Comprehensive AI Inventory:**
+  - *AI Images:* [None / List generative background or graphic renders]
+  - *AI Video / B-Roll:* [None / List synthetic motion clips]
+  - *AI Music / Soundtrack:* [None / State if generative AI audio or licensed human track]
+  - *Narration / Voice Clone:* [Human voiceover / ElevenLabs voice / Voice clone of specific individual]
+  - *Real Person / Place / Event Depicted:* [Yes/No — Are real historical/living persons depicted doing things they didn't do?]
+  - *Stylization Level:* [Stylized 2D cartoon / Concept diagram / Photorealistic realistic synthetic media]
 
 ---
 

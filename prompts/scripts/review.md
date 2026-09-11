@@ -36,7 +36,7 @@ Do NOT immediately jump to a full rewrite. A full rewrite without an audit cause
    - Evaluate whether length is justified by information density. (Do NOT penalize a script solely for being slightly longer if the extra time is delivering rich, verified value).
 5. **Structural Arc & Thesis Clarity:** Does the script have a unifying thesis, or does it feel like a random listicle? Is there a meaningful synthesis section comparing items?
 6. **Sensory & Audio Cadence:** Are sentences punchy, conversational, and rich in culinary-specific sensory language?
-7. **Pattern Interrupts & Visual Feasibility:** Are there visual shifts/interrupts every 20–30 seconds? Are cues practical for production?
+7. **Visual Clarification & Feasibility:** Do visual changes genuinely clarify mechanisms, comparisons, evidence, or conceptual transitions? (The 20–30 second interval is treated as an attention diagnostic, not a mandatory insertion schedule). Are cues practical for production?
 8. **Compliance with Editorial Handbook Standards (including Policy/Visual Preflight):**
    - (1) Zero hallucination (uncertain items tagged `[NEEDS VERIFICATION]` / `[CẦN KIỂM CHỨNG]`).
    - (2) Audience respect (at most one natural diagnostic question in body, zero artificial CTA spam).
@@ -72,7 +72,12 @@ Do NOT immediately jump to a full rewrite. A full rewrite without an audit cause
 - **Approved Editorial Decisions:** {USER PREFERENCES ON RUNTIME OR DEPTH}
 
 #### **Stage 2 Deliverables:**
-- Deliver the finalized voiceover narration script.
-- Strictly embed inline `[Visual Cue: ...]` tags.
-- Use only facts approved during Stage 1. Zero hallucinations.
-- Include final Word Count and calculated actual runtime at 145 WPM.
+1. **Header Metadata:** Final Word Count and calculated actual runtime at 145 WPM.
+2. **Clean Recording Script (For Voiceover Talent / TTS):**
+   - Spoken narration organized by section with vocal inflections in bold.
+   - Completely stripped of bracketed claim markers (`[C1]`) and visual tags (`[Visual Cue: ...]`).
+3. **Annotated Production Script (For Video Editors & Animators):**
+   - Complete text with inline `[Visual Cue: ...]` tags and exhaustive internal markers (`[C1]`, `[C2]`).
+4. **Final Production Claim Ledger:**
+   - Exhaustive table mapping every single claim marker in the rewrite to its verified dossier fact and Source IDs.
+   - Strictly verify: Zero orphan markers, zero duplicate Claim IDs, zero unverified claims narrated.
