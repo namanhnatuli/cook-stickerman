@@ -17,13 +17,13 @@ DO NOT write a voiceover script. DO NOT write narration. Output ONLY a structure
 ### **ANTI-HALLUCINATION & FACT-CHECKING RULES (CRITICAL):**
 1. **Zero Tolerance for Invented Facts:** Never invent a date, inventor, patent number, corporate campaign, controversy, or scientific mechanism.
 2. **Mandatory Claim-to-Source Mapping:** Every single factual claim and Knowledge Map element must link directly to a Source ID (`[S1]`, `[S2]`, etc.).
-3. **Definitions of Status Labels:**
-   - `[CONFIRMED]`: Backed by primary historical records, peer-reviewed food science, patents, or established academic consensus. Must have a valid Source ID.
-   - `[DISPUTED]`: Conflicting historical accounts (e.g., multiple nations claiming invention like Pavlova or Tres Leches). Must detail both sides and cite sources.
-   - `[POPULAR MYTH]`: Widely repeated folklore or marketing claims without verifiable proof. Clearly label as folklore with source explaining the myth.
-   - `[UNVERIFIED - DO NOT NARRATE]`: Claims with insufficient proof or where sources cannot be verified. You MUST use this tag if evidence is weak. The scriptwriter is strictly forbidden from stating these as fact.
+3. **Definitions of Epistemic Status Labels (Evidence Status vs. Required Narration Treatment):**
+   - `[CONFIRMED]`: Backed by primary historical records, peer-reviewed food science, patents, or established academic consensus. Must have a valid Source ID. Downstream required treatment: `[FACTUAL]`.
+   - `[DISPUTED]`: Conflicting historical accounts or contested hypotheses (e.g., multiple nations claiming invention like Pavlova or Tres Leches). Must detail both perspectives and cite sources. Downstream required treatment: `[QUALIFIED]` (never stated as settled fact).
+   - `[POPULAR MYTH]`: Widely repeated folklore, marketing claims, or cultural legends without verifiable proof. Clearly labeled as folklore with source explaining the myth. Downstream required treatment: `[MYTH-LABELED]` (never stated as historical truth).
+   - `[UNVERIFIED]`: Claims with insufficient proof or where sources cannot be verified. You MUST use this tag if evidence is weak. Downstream required treatment: `[BLOCKED]` (strictly forbidden from narration; qualification cannot substitute for evidence).
 4. **Source Quality Hierarchy & The Weak Secondary Rule:**
-   - A `Weak Secondary` source (random food blogs, unverified cooking forums, promotional listicles) **CANNOT** serve as the sole justification for a `[CONFIRMED]` claim. A claim backed only by a weak secondary source must be labeled `[UNVERIFIED - DO NOT NARRATE]`.
+   - A `Weak Secondary` source (random food blogs, unverified cooking forums, promotional listicles) **CANNOT** serve as the sole justification for a `[CONFIRMED]` claim. A claim backed only by a weak secondary source must be labeled `[UNVERIFIED]`.
 5. **Anti-Fabrication Access Check Rule:** Only mark `Opened and verified` in the Source Register if the source was actually opened and verified during this session. Otherwise, you MUST label it `Not independently verified`.
 6. **No Forced History:** If reliable historical origin records are irrelevant or insufficiently supported (e.g., in topics focused on oven heat dynamics, flour chemistry, cake collapse causes, or frosting stability), **omit the history section entirely** rather than cluttering the dossier with unverified trivia. Focus on genuine chemical mechanics and baking failure points.
 
@@ -34,40 +34,63 @@ DO NOT write a voiceover script. DO NOT write narration. Output ONLY a structure
 For each item/cake (designating 2–3 as **Hero Items** with expanded detail):
 
 #### 1. Knowledge Map (Pedagogy & Transferable Principles)
-- **Core Learning Outcome:** What fundamental concept must the viewer understand after this section?
-  - *Evidence:* `[S1]`, `[S2]`
-- **Essential Insight (Must be in narration):** The indispensable scientific or historical truth that unlocks this cake.
-  - *Evidence:* `[S1]`, `[S3]`
-- **Valuable Enrichment (Narrate if it materially deepens understanding and is not redundant):** Secondary historical context, regional evolution, or nuanced baking tip.
-  - *Evidence:* `[S4]`
-- **Optional Deep Cut (Visual note / On-screen graphic / Description only):** A niche trivia or archival detail to display as visual text without slowing audio pacing.
-  - *Evidence:* `[S5]`
-- **Causal Chain:** `Ingredient / Technique Choice` → `Physical/Chemical Mechanism` → `Visible Crumb/Texture Result` → `Practical Baker Takeaway`.
-  - *Evidence:* `[S1]`, `[S2]`
+- **Core Learning Outcome:** [What fundamental concept must the viewer understand after this section?]
+  - *Evidence Status:* `[CONFIRMED / DISPUTED / POPULAR MYTH / UNVERIFIED]`
+  - *Required Narration Treatment:* `[FACTUAL / QUALIFIED / MYTH-LABELED / BLOCKED]`
+  - *Source IDs:* `[S1]`, `[S2]`
+- **Essential Insight (Must be in narration):** [The indispensable scientific or historical truth that unlocks this cake.]
+  - *Evidence Status:* `[CONFIRMED / DISPUTED / POPULAR MYTH / UNVERIFIED]`
+  - *Required Narration Treatment:* `[FACTUAL / QUALIFIED / MYTH-LABELED / BLOCKED]`
+  - *Source IDs:* `[S1]`, `[S3]`
+- **Valuable Enrichment (Narrate if it materially deepens understanding and is not redundant):** [Secondary historical context, regional evolution, or nuanced baking tip.]
+  - *Evidence Status:* `[CONFIRMED / DISPUTED / POPULAR MYTH / UNVERIFIED]`
+  - *Required Narration Treatment:* `[FACTUAL / QUALIFIED / MYTH-LABELED / BLOCKED]`
+  - *Source IDs:* `[S4]`
+- **Deep-Cut Candidates (0..N):** [Memorable niche trivia, archival discoveries, or subtle micro-mechanisms that add unexpected depth; tag each with [D1], [D2], etc.]
+  - `[D1]`: [Specific niche insight]
+    - *Evidence Status:* `[CONFIRMED / DISPUTED / POPULAR MYTH / UNVERIFIED]`
+    - *Required Narration Treatment:* `[FACTUAL / QUALIFIED / MYTH-LABELED / BLOCKED]`
+    - *Source IDs:* `[S5]`
+    - *Initial Placement Recommendation:* `[Narration Candidate / On-Screen Visual Callout / Description Note / Omit]` (with brief rationale)
+  - `[D2]` (Optional): [Second niche insight with identical metadata fields]
+- **Causal Chain:**
+  - *Technique / Ingredient Choice:* [e.g., Folding liquid oil into yolk batter instead of creaming solid butter]
+    - *Evidence Status:* `[CONFIRMED]` | *Treatment:* `[FACTUAL]` | *Source IDs:* `[S1]`
+  - *Physical / Chemical Mechanism:* [e.g., Many liquid vegetable oils contain a higher proportion of low-melting unsaturated triacylglycerols and therefore remain largely liquid under typical refrigeration conditions; exact crystallization depends on TAG profile and temperature]
+    - *Evidence Status:* `[CONFIRMED]` | *Treatment:* `[FACTUAL]` | *Source IDs:* `[S1]`
+  - *Visible Crumb / Texture Result:* [e.g., Springy, pillowy crumb that maintains moist softness when served cold]
+    - *Evidence Status:* `[CONFIRMED]` | *Treatment:* `[FACTUAL]` | *Source IDs:* `[S2]`
+  - *Practical Baker Takeaway:* [e.g., Choose oil-based foam cakes for refrigerated frosted desserts]
+    - *Evidence Status:* `[CONFIRMED]` | *Treatment:* `[FACTUAL]` | *Source IDs:* `[S2]`
 
 #### 2. Chemical & Physical Mechanics (The Science)
 - **Primary Structural Mechanism:**
-  - Claim: [e.g., Liquid oil remains fluid at cool temperatures, preventing fat crystallization and preserving pliable tenderness]
-  - Status: `[CONFIRMED]`
-  - Source ID: `[S1]`
+  - Claim: [e.g., Compared with butter-rich formulas, liquid-oil formulas generally contribute less solid-fat firming under refrigeration; final crumb softness also depends on hydration, starch retrogradation, protein structure, and the complete cake formula]
+  - Evidence Status: `[CONFIRMED]`
+  - Required Narration Treatment: `[FACTUAL]`
+  - Source IDs: `[S1]`
 - **Core Formula Ratios:**
   - Claim: [Exact structural ratio difference]
-  - Status: `[CONFIRMED]`
-  - Source ID: `[S2]`
+  - Evidence Status: `[CONFIRMED]`
+  - Required Narration Treatment: `[FACTUAL]`
+  - Source IDs: `[S2]`
 - **Scientific Point of Failure:**
   - Claim: [Why it collapses, curdles, sinks, turns rubbery, or dries out]
-  - Status: `[CONFIRMED]`
-  - Source ID: `[S1]`
+  - Evidence Status: `[CONFIRMED]`
+  - Required Narration Treatment: `[FACTUAL]`
+  - Source IDs: `[S1]`
 
 #### 3. History & Lore (Omit if not relevant or insufficiently supported)
 - **Origin Records:**
   - Claim: [Documented dates, locations, or early cookbook mentions]
-  - Status: `[CONFIRMED]` or `[DISPUTED]`
-  - Source ID: `[S3]`
+  - Evidence Status: `[CONFIRMED]` or `[DISPUTED]`
+  - Required Narration Treatment: `[FACTUAL]` or `[QUALIFIED]`
+  - Source IDs: `[S3]`
 - **Contextual Narrative (Only if genuinely verified):**
   - Claim: [Historical context, rationing, patents, or genuine brand history]
-  - Status: `[CONFIRMED]` or `[POPULAR MYTH]`
-  - Source ID: `[S4]`
+  - Evidence Status: `[CONFIRMED]` or `[POPULAR MYTH]`
+  - Required Narration Treatment: `[FACTUAL]` or `[MYTH-LABELED]`
+  - Source IDs: `[S4]`
 
 #### 4. Texture & Sensory Profile
 - **Cross-Section Anatomy:** Physical crust-to-crumb breakdown.
@@ -76,8 +99,9 @@ For each item/cake (designating 2–3 as **Hero Items** with expanded detail):
 #### 5. Common Misconceptions & Baker Mistakes
 - **Common Myth / Baker Error:**
   - Claim: [What do home bakers or the general public commonly misunderstand?]
-  - Status: `[CONFIRMED]` / `[POPULAR MYTH]`
-  - Source ID: `[S5]`
+  - Evidence Status: `[CONFIRMED]` or `[POPULAR MYTH]`
+  - Required Narration Treatment: `[FACTUAL]` or `[MYTH-LABELED]`
+  - Source IDs: `[S5]`
 
 #### 6. Visual Evidence & Archival Checklist
 - Specific historical photos, vintage adverts, patent diagrams, or macro demonstrations needed to visually substantiate the facts.
@@ -86,8 +110,12 @@ For each item/cake (designating 2–3 as **Hero Items** with expanded detail):
 
 ### **MANDATORY DOSSIER CONCLUSION:**
 
-#### **Top 3 Verified Hook Angles**
-The most compelling *confirmed* facts to consider for the video intro and thumbnail.
+#### **Up to 3 Evidence-Resolved Hook Angles:**
+The most compelling angles to consider for the video intro and thumbnail, mapped to their epistemic resolution. Select only categories genuinely supported by the dossier; do not force a disputed origin or popular myth to fill an arbitrary slot:
+- **Confirmed Surprise Angle (if supported):** High-impact, counter-intuitive baking mechanism or historical fact (`[CONFIRMED]` / `[FACTUAL]`).
+- **Disputed-Origin Angle (if genuinely contested):** Contested invention debate framed with neutral epistemic balance (`[DISPUTED]` / `[QUALIFIED]`).
+- **Popular Myth-vs-Evidence Angle (if genuine folklore exists):** Widely believed folklore contrasted directly against chemical or archival evidence (`[POPULAR MYTH]` / `[MYTH-LABELED]`).
+*(Every hook angle must be source-mapped and preserve its proper epistemic certainty).*
 
 #### **Fact-Check Warning List**
 Explicit list of popular myths or unverified stories that the scriptwriter must AVOID stating as truth.

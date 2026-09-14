@@ -29,14 +29,15 @@ Tài liệu này ghi lại thông tin định danh, nguồn gốc xuất xứ (p
 
 Số liệu dưới đây được tạo tự động bởi script [`research/analyze_corpus.py`](analyze_corpus.py) chạy trên Python 3.
 
-> **LƯU Ý VỀ PHẠM VI TOKENIZER:**
-> Thuật toán tách từ và ngắt câu trong script là một **giải pháp kỹ thuật heuristic** (Engineering Heuristic) được thiết kế tối ưu để đo lường nhịp điệu, tốc độ nói (WPM) và phân bổ độ dài câu trong kịch bản ẩm thực dạng nói. Đây không phải mô hình phân đoạn ngôn ngữ học chuyên sâu (NLP parsing model).
+> **LƯU Ý VỀ PHẠM VI TOKENIZER & ĐO LƯỜNG:**
+> Thuật toán tách từ và ngắt câu trong script là một **giải pháp kỹ thuật heuristic** (Engineering Heuristic) được thiết kế tối ưu phục vụ phân tích word count, nhịp câu và làm dữ liệu đầu vào cho ước tính tốc độ nói WPM trong kịch bản ẩm thực (chứ không trực tiếp đo audio duration thực tế). Đây không phải mô hình phân đoạn ngôn ngữ học chuyên sâu (NLP parsing model). Đối với một số trường hợp ngoại lệ chứa từ viết tắt đứng trước danh từ riêng/viết hoa ở ranh giới câu (ví dụ: `...in the U.S. Bakers elsewhere...`), heuristic ưu tiên vai trò bổ ngữ nên test suite ghi nhận bằng `@unittest.expectedFailure` nhằm khẳng định chuẩn ngôn ngữ học 2 câu thay vì đóng băng sai sót; điều này không ảnh hưởng đến số liệu chuẩn do 10 file transcript mẫu không chứa các cấu trúc trên.
 
 ### Quy Tắc Xử Lý Dữ Liệu (Tokenization Rules):
 1. **Lọc thẻ âm thanh theo danh sách cho phép (Allowlist):** Chỉ loại bỏ các thẻ chỉ dẫn âm thanh thực sự không đọc (`[music]`, `[background-music]`, `[snorts]`, `[applause]`, `[laughter]`, `[inaudible]`, `[noise]`). Giữ nguyên các thẻ nội dung có ý nghĩa phân đoạn (ví dụ: `[Chapter 1]`).
 2. **Bảo vệ số thập phân:** Số có dấu chấm (ví dụ: `2.3 million`, `120.5 C`) được bảo vệ để không bị ngắt câu sai.
 3. **Bảo vệ từ viết tắt theo ngữ cảnh:**
-   - Các từ viết tắt thông dụng (`vs.`, `etc.`, `Dr.`, `Mr.`) được bảo vệ dấu chấm hoàn toàn.
+   - Các chức danh/từ viết tắt đơn (`vs.`, `Dr.`, `Mr.`, `Mrs.`, `Prof.`, `Jr.`): bảo vệ dấu chấm không làm dấu ngắt câu.
+   - Từ viết tắt liệt kê `etc.`: bảo vệ dấu chấm ở giữa câu (khi theo sau là dấu phẩy/chấm phẩy hoặc từ viết thường: `etc., then bake`), nhưng giữ làm dấu ngắt câu nếu theo sau là từ viết hoa/mở đầu câu mới (`etc. Then bake`) hoặc ở cuối văn bản.
    - Các từ viết tắt nhiều dấu chấm (`B.C.E.`, `C.E.`, `U.S.`, `U.S.A.`, `e.g.`, `i.e.`): bảo vệ dấu chấm nội bộ; dấu chấm cuối cùng được đánh giá theo ngữ cảnh (giữ làm dấu ngắt câu nếu theo sau là từ mở đầu câu mới; bảo vệ nếu đóng vai trò tính từ/bổ ngữ như `U.S. Market` hoặc nằm trong mệnh đề ví dụ).
 4. **Ngắt câu:** Tách câu theo dấu ngắt chuẩn (`.`, `!`, `?`). Bỏ qua các chuỗi rỗng.
 5. **Đếm từ & Tái lập thống kê:** Tách theo khoảng trắng (`split()`) sau khi hoàn nguyên các token được bảo vệ. Logic tổng hợp dữ liệu dùng chung (`aggregate_results`) giữa production và bộ kiểm thử tự động `unittest` (`python3 research/analyze_corpus.py --test`).

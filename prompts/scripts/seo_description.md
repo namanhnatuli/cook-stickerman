@@ -6,9 +6,9 @@ Your task is to craft an authentic, high-relevance **YouTube Video Description, 
 
 ### **REQUIRED INPUTS:**
 - **Final Approved Master Script:** {PASTE APPROVED SCRIPT}
-- **Final Approved Claim Map / Knowledge Map:** {PASTE APPROVED CLAIMS & EVIDENCE IDS}
-- **Final Video Title:** {PASTE TITLE}
-- **Governing Thesis & Core Promise:** {WHAT DOES THE VIEWER LEARN?}
+- **Final Production Claim Ledger:** {PASTE CLAIM LEDGER WITH CLAIM IDS & EVIDENCE STATUS}
+- **Reconciled Official Video Title (from Step 8A: packaging_reconciliation.md):** {PASTE RECONCILED TITLE & VARIANTS}
+- **Governing Thesis & Core Promise (from Step 8A):** {WHAT DOES THE VIEWER LEARN?}
 - **Final Edit Timecodes (from locked rough cut):** {PASTE TIMECODES AND BEAT NAMES}
 - **Primary Focus Culinary Topic:** {e.g., Basque Cheesecake, Chiffon Cake, Emulsion Science}
 - **Selected Research Sources (actually cited in script):** {LIST KEY BOOKS / INSTITUTIONAL ARCHIVES}
@@ -17,8 +17,15 @@ Your task is to craft an authentic, high-relevance **YouTube Video Description, 
 
 ---
 
-### **OFFICIAL YOUTUBE METADATA PRINCIPLES:**
+### **OFFICIAL YOUTUBE METADATA & EPISTEMIC PACKAGING PRINCIPLES:**
 - **Strict Script Integrity:** Do not introduce factual claims, mechanisms, historical details, or promises that are absent from the Final Approved Master Script. The description must faithfully reflect what was actually produced and narrated.
+- **Epistemic Packaging Gate (Anti-Certainty Drift):**
+  - Titles, chapter names, and video descriptions must strictly preserve the epistemic framing of the script:
+    - `[CONFIRMED]` claims may be stated factually.
+    - `[DISPUTED]` claims must retain qualified framing (e.g., *"the debated origin of..."*, *"the competing theories behind..."*).
+    - `[POPULAR MYTH]` claims must remain explicitly myth/legend-framed (e.g., *"the popular folklore claiming..."*).
+    - Never inflate certainty in metadata (e.g., do not turn a disputed origin into "The True History" in the title or description).
+    - Every factual or epistemically qualified statement in the metadata must map directly to an approved Claim ID.
 - Title, thumbnail, and description are the primary discovery drivers. Descriptions should clearly summarize the video's genuine value.
 - Tags play a minimal role in video ranking; their primary function is helping viewers find content when search keywords or cake names are commonly misspelled (e.g., *chiffon vs chifon*, *meringue vs maringue*).
 - Do not stuff descriptions with unnatural keyword lists. Use conversational, natural language.
@@ -27,7 +34,12 @@ Your task is to craft an authentic, high-relevance **YouTube Video Description, 
 
 ### **OUTPUT DELIVERABLES:**
 
-#### **1. YouTube Video Description (200–300 Words):**
+#### **1. Packaging Metadata Title Confirmation (from Step 8A):**
+- **Reconciled Official Title:** [Copied from Step 8A: packaging_reconciliation.md]
+- **Title Claim IDs & Epistemic Status:** `[C1]`, `[C4]`, etc. (Confirmed matching ledger)
+- **Runtime Phrase Verification:** Confirmed matching locked rough cut timecodes.
+
+#### **2. YouTube Video Description (200–300 Words):**
 - **The Overview & Value Promise (Opening Paragraph):**
   - Use the opening lines to clearly summarize what the video explains in natural, engaging language.
   - Naturally weave in 1–2 primary topic concepts so viewers instantly understand the core takeaway before clicking "Show more".
@@ -49,7 +61,7 @@ Your task is to craft an authentic, high-relevance **YouTube Video Description, 
   - Concise outro comment prompt.
   - Epistemic note clarifying that diagrams and 3D cutaways represent illustrative educational models.
 
-#### **2. Topic Discovery & Misspelling Tags (Max 300 characters):**
+#### **3. Topic Discovery & Misspelling Tags (Max 300 characters):**
 - **1–2 Primary Focus Topics:** (e.g., *Baking Science*, *Cake Types*)
 - **3–5 Natural Supporting Phrases:** (e.g., *why cakes collapse*, *chiffon vs sponge*, *gluten in cake batter*)
 - **Common Misspellings & Regional Name Variants (The Primary Utility of Tags):**

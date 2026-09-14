@@ -9,16 +9,23 @@
    - Never fabricate or invent dates, inventor names, corporate campaigns, chemical mechanisms, or historical anecdotes.
    - If any claim, number, or connection is unverified, leave it blank or explicitly mark it with **`[NEEDS VERIFICATION]` / `[CẦN KIỂM CHỨNG]`**. Never invent facts to fill a narrative gap.
 
-2. **Claim-Status Integrity:**
-   - Use only claims supported by the Verified Research Dossier.
-   - Claims marked `[CONFIRMED]` must be stated factually.
-   - Claims marked `[DISPUTED]` must be explicitly framed as contested (e.g., *"Both Mexico and Nicaragua claim its origin..."*).
-   - Claims marked `[POPULAR MYTH]` must be explicitly identified as folklore, marketing campaigns, or unverified popular beliefs.
-   - Never narrate claims marked `[UNVERIFIED - DO NOT NARRATE]`.
+2. **Claim-Status Integrity (The Two-Dimensional Epistemic Model):**
+   - The production pipeline formally separates **Evidence Status** (what verified sources substantiate) from **Narration Treatment** (how the script and localized voiceover frame the proposition):
+     - **Dimension 1: Evidence Status (Assigned in Research Dossier):**
+       - `[CONFIRMED]`: Verified facts directly supported by primary records, peer-reviewed food science, patents, or established academic consensus.
+       - `[DISPUTED]`: Contested historical accounts or scientific debates (e.g., multiple nations claiming invention like Pavlova or Tres Leches).
+       - `[POPULAR MYTH]`: Widely repeated folklore, marketing campaigns, or unverified popular beliefs.
+       - `[UNVERIFIED]`: Claims with insufficient proof or unverified sources.
+     - **Dimension 2: Narration Treatment (Required Framing in Script & Localization):**
+       - `[FACTUAL]`: Stated directly as factual reality. Permitted **strictly** for `[CONFIRMED]` evidence.
+       - `[QUALIFIED]`: Explicitly framed as contested, noting debate and sources (e.g., *"Both Mexico and Nicaragua claim its origin..."*). Mandatory for `[DISPUTED]` claims; a disputed claim is not "false", but must never be presented as settled fact.
+       - `[MYTH-LABELED]`: Explicitly identified as folklore, legend, or marketing lore (e.g., *"Popular legend claims...", "While widely believed to be invented by..."*). Mandatory for `[POPULAR MYTH]` claims.
+       - `[BLOCKED]`: Prohibited from narration. Mandatory for `[UNVERIFIED]` claims.
+   - **No Qualification Without Evidence:** An unverified claim lacking valid sources cannot bypass the release gate simply by adding a qualifier (*"some say"*). It must be independently verified, reclassified based on valid dossier sources, or removed.
 
 3. **Causal Chain Rigor:**
    - Every explained item must convey an authentic causal chain: `[Technique / Ingredient Choice]` → `[Physical / Chemical Mechanism]` → `[Visible Crumb / Texture Outcome]` → `[Baker Takeaway]`.
-   - Signposted inferences are permitted only when they follow directly from verified physical properties documented in the dossier (e.g., oil remaining liquid at refrigerated temperatures). Do not introduce new factual claims via inference.
+   - Signposted inferences are permitted only when they follow directly from verified physical properties documented in the dossier (e.g., vegetable oils with a high proportion of low-melting unsaturated triacylglycerols remaining largely liquid under domestic refrigeration, which—alongside formula hydration and starch retrogradation dynamics—preserves crumb softness). Do not introduce new factual claims or oversimplified single-variable claims via inference.
 
 4. **Justified Precision (Anti-False Precision):**
    - Use exact numbers, temperatures, dates, and locations only when they are directly supported by the research dossier and scientifically justified.
@@ -37,13 +44,13 @@
    - Flag content only when it graphically or sensationally focuses on gore, severe injury, self-harm, suicide, or dangerous acts easily imitated by minors.
    - When covering tragic historical events (famine, wartime rationing, industrial accidents like the Boston Molasses Flood), use a calm, respectful documentary context without gratuitous dramatization.
 
-3. **Altered & Synthetic Content Disclosure (Official YouTube GenAI Policy):**
+3. **Altered & Synthetic Content / "AI use" Disclosure (Official YouTube GenAI Policy):**
    - `writing_rules.md` is the unified source of truth for all platform and editorial disclosure decisions across the pipeline.
-   - **Platform Disclosure Required (YouTube Studio Toggle: YES):**
+   - **Platform Disclosure Required (YouTube Studio "AI use" Setting / Altered Content: YES):**
      - *AI-Generated Music / Soundtrack:* Requires disclosure if video uses generative AI to synthesize the soundtrack or background musical composition.
      - *Voice Cloning of Other Individuals:* Requires disclosure if voice cloning or voice conversion technology mimics a real living or historical person saying words they did not speak.
      - *Photorealistic Synthetic Media:* Requires disclosure if realistic/photorealistic footage or images depict real people doing things they didn't do, or realistically portray real-world events that did not occur.
-   - **Platform Disclosure NOT Required (YouTube Studio Toggle: NO):**
+   - **Platform Disclosure NOT Required (YouTube Studio "AI use" Setting / Altered Content: NO):**
      - *Creator's Own Voice Clone:* Does not require disclosure when narrating original educational content in the creator's authorized voice.
      - *Stylized 2D Animation & Mascots:* Cook Stickerman 2D character overlays, animated icons, and standard motion graphics do not require platform disclosure.
    - **Conditional Assessment (Generic Synthetic TTS):**

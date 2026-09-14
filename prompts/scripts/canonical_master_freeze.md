@@ -9,19 +9,24 @@ This frozen document (`11_canonical_master_freeze.md`) is the **single source of
 ### **MANDATORY INPUTS FOR FREEZE:**
 - **Audited Master Script & Claim Ledger:** {PASTE SCRIPT & LEDGER FROM REVIEW STAGE 1 (if approved without rewrite) OR REVIEW STAGE 2 (if rewritten)}
 - **Locked Rough Cut Timecodes (from Step 7):** {PASTE LOCKED TIMECODES}
-- **Hero Thumbnail Final Render Path & Concept (from Step 8):** {PASTE THUMBNAIL DETAILS}
+- **Hero Thumbnail Final Render Path & Concept (from Step 8B):** {PASTE THUMBNAIL DETAILS}
 - **Final SEO Description & Tags (from Step 9):** {PASTE SEO METADATA}
-- **Package-Level Policy Verification & Disposition (from Step 10):**
-  - *Verification Status:* [PASSED — INITIAL AUDIT, NO PATCHES REQUIRED / PASSED — POST-PATCH RE-AUDIT / FAILED]
+- **Package-Level Policy Verification & Disposition (from Step 10: policy_audit.md):**
+  - *Audit Phase:* [INITIAL / POST-PATCH]
+  - *Platform Policy Status:* [PASSED — INITIAL AUDIT, NO PATCHES REQUIRED / PASSED — POST-PATCH RE-AUDIT / FAILED — UNRESOLVED RISK]
+  - *Epistemic Integrity Status:* [PASSED / FLAGGED / NOT REVIEWED]
+  - *Audit Recommendation:* [ELIGIBLE FOR HUMAN RELEASE REVIEW / PATCH REQUIRED / NOT REVIEWED]
+  - *Channel Authenticity Coverage:* [CHANNEL SAMPLE REVIEWED / SINGLE VIDEO ONLY / NOT REVIEWED]
   - *Human Patch Disposition:* [List of human-approved / rejected patches with written rationale, or "None required — clean initial audit"]
 - **Human Release Approval Confirmation:** {EXPLICIT HUMAN SIGN-OFF BY LEAD EDITOR WITH DATE}
 
 > **CRITICAL STOP CONDITION (TAMPER-PROOF GATES):**
 > Execution is BLOCKED and CANNOT generate a `READY - FROZEN` release package if:
 > 1. Human sign-off is missing or incomplete.
-> 2. Package verification status is NOT one of the two valid PASSED states:
->    - `PASSED — INITIAL AUDIT, NO PATCHES REQUIRED` (Initial audit confirmed Low Risk across all assets; zero patches needed).
->    - `PASSED — POST-PATCH RE-AUDIT` (All approved patches applied, assets regenerated, and re-audit confirmed Low Risk).
+> 2. Package verification does NOT meet the required release conditions:
+>    - **Platform Policy Status:** Must be `PASSED — INITIAL AUDIT, NO PATCHES REQUIRED` OR `PASSED — POST-PATCH RE-AUDIT`.
+>    - **Epistemic Integrity Status:** Must be `PASSED` (zero unmapped claims, zero certainty drift).
+>    - **Audit Recommendation:** Must be `ELIGIBLE FOR HUMAN RELEASE REVIEW`. (If blocked by platform policy, flag as `BLOCKED — PLATFORM POLICY`; if blocked by epistemic integrity, flag as `BLOCKED — EPISTEMIC INTEGRITY`).
 > 3. Any required input is missing or contains unresolved `[NEEDS VERIFICATION]` flags.
 > - When blocked: Set Freeze Status to **`BLOCKED - INCOMPLETE GATES`**, list the missing or failed gates only, and halt execution immediately.
 
@@ -45,8 +50,16 @@ This frozen document (`11_canonical_master_freeze.md`) is the **single source of
    - **Annotated Production Script:** Contains all internal claim markers (`[C1]`, `[C2]`) and inline `[Visual Cue: ...]` tags for video editors and animators.
    - **Parity Standard:** *Clean Recording Script must equal the spoken-text projection of the Annotated Production Script after claim markers and visual cues are programmatically removed.*
 
-3. **Zero Uncertainty Gate:**
-   - Confirm that **zero unverified claims** remain. If any `[NEEDS VERIFICATION]` or `[CẦN KIỂM CHỨNG]` flag exists, freeze is BLOCKED until verified or removed.
+3. **Zero Unresolved Verification Gate (The Two-Dimensional Epistemic Standard):**
+   - Confirm that **zero unverified claims** remain. If any `[NEEDS VERIFICATION]` or `[CẦN KIỂM CHỨNG]` flag exists, freeze is BLOCKED until:
+     1. Independently verified; or
+     2. Reclassified as `DISPUTED` or `POPULAR MYTH` based on valid dossier sources and given the required narration treatment; or
+     3. Removed.
+   - **Qualification cannot substitute for evidence:** Merely softening unverified claims with words like *"some say"* without valid dossier sources is strictly prohibited.
+   - Every narrated claim must be epistemically resolved into the unified two-dimensional schema:
+     - **Evidence Status:** `[CONFIRMED]`, `[DISPUTED]`, `[POPULAR MYTH]`, `[UNVERIFIED]`.
+     - **Narration Treatment:** `[FACTUAL]` (for `[CONFIRMED]`), `[QUALIFIED]` (for `[DISPUTED]`), `[MYTH-LABELED]` (for `[POPULAR MYTH]`), `[BLOCKED]` (for `[UNVERIFIED]`).
+     - **Review Verdict:** Must be `[PASS]` for all frozen claims.
 
 ---
 
@@ -56,7 +69,7 @@ This frozen document (`11_canonical_master_freeze.md`) is the **single source of
 # CANONICAL MASTER RELEASE PACKAGE: [VIDEO TITLE]
 - **Canonical Release ID:** v1.0-freeze-[slug]
 - **Freeze Date:** [YYYY-MM-DD]
-- **Freeze Status:** [BLOCKED - INCOMPLETE GATES / PENDING HUMAN RELEASE APPROVAL / READY - FROZEN]
+- **Freeze Status:** [BLOCKED - INCOMPLETE GATES / READY - FROZEN]
 - **Human Executive Editor Sign-Off:** [Pending / Editor Name & Date]
 - **Measured Master Runtime:** [MM:SS] (From locked rough cut timeline)
 - **Narration Spoken Word Count:** [____ words]
@@ -66,11 +79,12 @@ This frozen document (`11_canonical_master_freeze.md`) is the **single source of
 
 ---
 
-## 1. POLICY AUDIT RECONCILIATION LOG
+## 1. POLICY & EPISTEMIC AUDIT RECONCILIATION LOG
 - **Final Package Verification Status:** `[PASSED — INITIAL AUDIT, NO PATCHES REQUIRED]` / `[PASSED — POST-PATCH RE-AUDIT]`
-- **Overall Final Policy Risk Level:** `[Low Risk — Zero Unresolved Findings]`
+- **Official Platform Policy Risk Level:** `[Low Risk — Zero Unresolved Platform Violations]`
+- **Cook Stickerman Epistemic Integrity:** `[PASSED — Zero Certainty Drift; 100% Packaging Claims Mapped]`
 - **Human-Approved Patch Resolution Table:**
-*(If no patches were required, record: "No patches required; initial audit confirmed Low Risk across all package assets.")*
+*(If no patches were required, record: "No patches required; initial audit confirmed Low Risk and Epistemic Integrity PASSED across all package assets.")*
 
 | Flagged Item / Asset | Evaluated Concern | Human Disposition (Accepted / Rejected) | Rejection Rationale or Verified Script Resolution |
 |---|---|---|---|
@@ -79,14 +93,17 @@ This frozen document (`11_canonical_master_freeze.md`) is the **single source of
 ---
 
 ## 2. CANONICAL PACKAGING & DISCLOSURES
-- **Final Official Title:** [Main Title]
+- **Final Reconciled Official Title:** [Main Title verified against master script and measured runtime]
 - **Title Alternative 1 (Browse):** [Alternative 1]
 - **Title Alternative 2 (Search):** [Alternative 2]
-- **Thumbnail Asset Path / Concept:** [Path to final render + text overlay: "2–4 WORDS"]
+- **Title Claim IDs & Epistemic Framing Check:** `[C1, ...] | [CONFIRMED -> FACTUAL / DISPUTED -> QUALIFIED / POPULAR MYTH -> MYTH-LABELED]`
+- **Title Runtime Phrase Verified Against Measured Edit Runtime:** `[YES / NO / N/A]`
+- **Thumbnail Asset Path & Text Overlay:** [Path to final render + text overlay: "2–4 WORDS"]
+- **Thumbnail Claim IDs (Text / Visual):** [Text: C1 / Visual: C2 / Mascot: N/A]
 - **Final YouTube Video Description & Locked Chapters:**
   [Paste complete description with absolute locked timestamps (0:00, 0:45, ...)]
 - **Final Tags String:** [Paste concise tags focusing on misspellings and primary topics]
-- **YouTube Studio Altered-Content Toggle:** `[ENABLED / NOT REQUIRED]` (Detailed justification based on AI inventory)
+- **YouTube Studio "AI use" Disclosure Setting:** `[ENABLED / NOT REQUIRED]` (Detailed justification based on AI inventory; formerly/also referred to as Altered Content toggle)
 - **Epistemic Labeling:** [List of diagrams/cutaways marked as "Illustrative Concept Model"]
 
 ---
@@ -105,13 +122,14 @@ This frozen document (`11_canonical_master_freeze.md`) is the **single source of
 
 ---
 
-## 5. FINAL PRODUCTION CLAIM LEDGER (100% FACTUALLY VERIFIED)
-*(Every externally verifiable factual claim must be cataloged here with valid Source IDs. Zero orphan markers.)*
+## 5. FINAL PRODUCTION CLAIM LEDGER (100% SOURCE-MAPPED AND EPISTEMICALLY RESOLVED)
+*(Every narrated factual or historical proposition must be cataloged here with valid Source IDs. Zero orphan markers; zero unverified claims; all claims must achieve Review Verdict: PASS.)*
 
-| Claim ID | Script Excerpt | Verified Dossier Fact | Source IDs | Claim Status |
-|---|---|---|---|---|
-| `[C1]` | *"Excerpt..."* | *Fact in dossier Knowledge Map* | `[S1]`, `[S2]` | `[CONFIRMED]` |
-| `[C2]` | *"Excerpt..."* | *Fact in dossier Knowledge Map* | `[S3]` | `[CONFIRMED]` / `[DISPUTED]` |
+| Claim ID | Script Excerpt | Dossier Knowledge Map Fact | Source IDs | Evidence Status | Narration Treatment | Review Verdict |
+|---|---|---|---|---|---|---|
+| `[C1]` | *"Excerpt..."* | *Fact in dossier Knowledge Map* | `[S1]`, `[S2]` | `[CONFIRMED]` | `[FACTUAL]` | `[PASS]` |
+| `[C2]` | *"Excerpt..."* | *Contested origin theory* | `[S3]`, `[S4]` | `[DISPUTED]` | `[QUALIFIED]` | `[PASS]` |
+| `[C3]` | *"Excerpt..."* | *Common bakery myth* | `[S5]` | `[POPULAR MYTH]` | `[MYTH-LABELED]` | `[PASS]` |
 
 ---
 

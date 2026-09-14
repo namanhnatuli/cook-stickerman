@@ -9,14 +9,17 @@ Your task is to take the video concept, viewer learning promise, and visual proo
 
 ### **REQUIRED PRODUCTION BRIEF INPUTS:**
 You must review the following inputs before drafting thumbnail directions:
-- **Video Title:** {PASTE FINAL TITLE}
+- **Video Title:** {PASTE RECONCILED OFFICIAL TITLE FROM STEP 8A (packaging_reconciliation.md)}
 - **Viewer Core Question / Curiosity Gap:** {e.g., "Why do chiffon cakes stay soft while pound cakes harden?"}
-- **Core Learning Promise / The Big Insight:** {e.g., "Liquid oil remains fluid at cool temperatures, butter crystalizes solid"}
-- **One Visual Proof:** {e.g., Side-by-side chilled comparison: rock-hard butter crumb vs. springy oil crumb}
+- **Core Learning Promise / The Big Insight:** {FROM STEP 8A: packaging_reconciliation.md}
+- **One Visual Proof:** {FROM STEP 8A: packaging_reconciliation.md}
 - **Hero Object:** {The cake, component, tool, failure result, or visual proof that most accurately demonstrates the learning promise (e.g., a towering cross-section slice, an inverted sunken cake, a broken buttercream emulsion, or a chemical bubble macro)}
 - **Visual Aesthetic Style:** {CHOOSE ONE: Commercial Food Photography / 3D Scientific Cutaway & X-Ray Render / Editorial Diagram Composite}
 - **Brand Colors:** {e.g., Warm caramel #D97326, Mustard yellow #E5A93C, Charcoal backdrop}
 - **Text Overlay Direction (2–4 words max):** {e.g., "NEVER USE BUTTER?"}
+- **Text Overlay Claim IDs & Epistemic Status:** {e.g., [C1]: [CONFIRMED] / [FACTUAL]; or N/A (pure curiosity/question hook)}
+- **Visual Representation Claim IDs & Epistemic Status:** {e.g., [C2] (chilled butter vs. oil texture comparison): [CONFIRMED] / [FACTUAL]}
+- **Non-Claim Curiosity Element:** {e.g., Mascot Cook Stickerman reaction, visual disaster crack, or N/A}
 
 ---
 
@@ -29,6 +32,16 @@ A high-CTR YouTube thumbnail on mobile needs instant visual hierarchy within 0.5
 2. **Supporting Tension Cue:** 1 small comparison element, a visual disaster crack, a temperature gauge, or a subtle reaction from mascot `Cook Stickerman`.
 3. **High-Contrast Background:** Rich, saturated brand colors or warm studio backdrop (avoid pure white `#FFFFFF` that blends into YouTube's light mode interface).
 4. **Text Overlay (Manual in Photoshop/Canva):** Strictly **2 to 4 bold words max**. Do NOT render text inside AI image generators.
+5. **Epistemic Packaging Gate (Anti-Certainty Drift for Text & Visuals):**
+   - **Text Overlays:**
+     - `[CONFIRMED]` claims may be stated factually in text overlays.
+     - `[DISPUTED]` claims must retain qualified framing.
+     - `[POPULAR MYTH]` claims must remain explicitly myth/legend-framed.
+     - **Character Constraint Fallback:** If qualification cannot fit in the 2–4 word thumbnail text overlay, **use an organic question or curiosity gap** (e.g., *"WHO INVENTED THIS?"* or *"BUTTER MYTH?"*) rather than asserting the claim as fact (e.g., never write *"THE TRUE INVENTOR"* for a disputed origin or popular myth).
+   - **Visual Depictions:**
+     - Visual comparisons, macro textures, and cutaways must physically represent verified claims from the research dossier.
+     - Never visually depict a popular myth or unverified theory as settled physical reality without an explicit illustrative/concept diagram marker.
+   - Every factual or epistemically qualified statement in thumbnail text overlays or visual demonstrations must map to an approved Claim ID.
 
 #### **Part A Image Prompts (Separated by Generator Engine & Style):**
 

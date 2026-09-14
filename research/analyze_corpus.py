@@ -51,7 +51,7 @@ def clean_and_tokenize(raw_text):
     # Step 2: Protect decimals in numbers (e.g., '120.5 C', '2.3 million')
     cleaned = re.sub(r'(\d+)\.(\d+)', r'\1<DOT>\2', cleaned)
 
-    # Step 3: Protect honorifics/titles (Mr., Dr., etc.) where dot is never a sentence-terminal delimiter
+    # Step 3: Protect honorifics/titles/abbreviations (Mr., Dr., etc.) where dot is never a sentence-terminal delimiter
     cleaned = re.sub(r'\b(mr|mrs|ms|dr|prof|sr|jr|vs|vol|no)\.', r'\1<ABBR_DOT>', cleaned, flags=re.IGNORECASE)
 
     # Step 4: Multi-dot abbreviations (B.C.E., C.E., U.S.A., U.S., e.g., i.e.)
@@ -64,6 +64,10 @@ def clean_and_tokenize(raw_text):
     # Protect trailing dot if followed by comma, semicolon, colon, or lowercase word
     cleaned = re.sub(r'([A-Za-z]<ABBR_DOT>[A-Za-z0-9<ABBR_DOT>]*)\.(?=[,\s;:]+[a-z])', r'\1<ABBR_DOT>', cleaned)
     cleaned = re.sub(r'([A-Za-z]<ABBR_DOT>[A-Za-z0-9<ABBR_DOT>]*)\.(?=[,;:])', r'\1<ABBR_DOT>', cleaned)
+
+    # Contextual check for etc.: protect trailing dot when followed by comma/punctuation or lowercase continuation
+    cleaned = re.sub(r'\b[eE][tT][cC]\.(?=[,\s;:]+[a-z])', r'etc<ABBR_DOT>', cleaned)
+    cleaned = re.sub(r'\b[eE][tT][cC]\.(?=[,;:])', r'etc<ABBR_DOT>', cleaned)
 
     # Contextual check for U.S. / U.S.A.: protect trailing dot when followed by a noun (e.g., 'U.S. Market')
     cleaned = re.sub(
@@ -199,6 +203,29 @@ class CorpusTokenizerTests(unittest.TestCase):
         res = analyze_text(text)
         self.assertEqual(res['sentences'], 1)
         self.assertEqual(res['words'], 6)
+
+    def test_etc_mid_sentence(self):
+        res = analyze_text('Use flour, sugar, etc., then bake.')
+        self.assertEqual(res['sentences'], 1)
+
+    def test_etc_sentence_terminal(self):
+        res = analyze_text('Use flour, sugar, etc. Then bake.')
+        self.assertEqual(res['sentences'], 2)
+
+    @unittest.expectedFailure
+    def test_known_heuristic_limitation_us_noun_boundary(self):
+        # Known heuristic boundary limitation: without a full syntactic parser,
+        # 'U.S. Bakers' is treated as modifier (1 sentence) rather than terminal boundary (2 sentences).
+        # We assert the true linguistic boundary (2 sentences) with @unittest.expectedFailure.
+        res = analyze_text('He worked in the U.S. Bakers elsewhere disagreed.')
+        self.assertEqual(res['sentences'], 2)
+
+    @unittest.expectedFailure
+    def test_known_heuristic_limitation_eg_noun_boundary(self):
+        # Known heuristic boundary limitation: 'e.g. Gelatin' where Gelatin is capitalized.
+        # We assert the true linguistic boundary (2 sentences) with @unittest.expectedFailure.
+        res = analyze_text('Several stabilizers work, e.g. Gelatin is common.')
+        self.assertEqual(res['sentences'], 2)
 
     def test_empty_corpus(self):
         res = analyze_text('')

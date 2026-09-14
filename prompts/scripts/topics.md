@@ -42,10 +42,11 @@ For each of the 10 concepts, format in Markdown:
 - **Core Promise:** What fundamental principle or baking skill will the viewer understand after watching?
 - **Transferable Baking Principle:** What broad culinary law does this video reveal (e.g., gas entrapment, protein coagulation)?
 - **Hook Angle:** The counter-intuitive fact, tension, or curiosity gap introduced in the first 15 seconds.
-- **3 Title Variations:**
+- **3 Working Title Variations (Provisional — Subject to Step 8A Title Reconciliation):**
   - *Option A (Browse / High Curiosity):* [e.g., Why Your Cake Sank (The Hidden Science)]
-  - *Option B (Taxonomy / Authority):* [e.g., Every Cake Failure Explained in 9 Minutes]
+  - *Option B (Taxonomy / Authority):* [e.g., Every Cake Failure Explained in [X] Minutes — *Note: Runtime number [X] is provisional and strictly locked against measured rough cut duration in Step 8A*]
   - *Option C (Punchy / Direct):* [e.g., The 1 Mistake Ruining Your Crumb]
+  *(Rule: All working titles are provisional hypotheses. Step 8A requires formal Final Title Reconciliation against the Claim Ledger and measured edit runtime).*
 - **Thumbnail Hypothesis (Early Packaging Concept):**
   - *Hero Object (40–60% of frame):* [e.g., Giant sunken cake cross-section with wet dense bottom]
   - *Supporting Elements:* [e.g., Arrow pointing to dense zone, thermometer, or subtle mascot reaction]
