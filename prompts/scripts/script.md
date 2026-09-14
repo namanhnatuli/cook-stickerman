@@ -110,7 +110,7 @@ Use visual changes when they clarify a physical mechanism, comparison, historica
      | Section / Item | Candidate Trim / Omission | Time Saved | Pedagogical Impact / Trade-off |
      |---|---|---|---|
      | *[e.g., Chiffon]* | *Move historical patent backstory to visual overlay or description* | *~25s (60 words)* | *Preserves core lipid/foam physics while streamlining historical context* |
-     | *[e.g., Angel Food]* | *Condense acid denaturation explanation to core takeaway* | *~15s (35 words)* | *Slight loss of chemical depth on cream of tartar, keeps causal takeaway* |
+      | *[e.g., Angel Food]* | *Condense acid-mediated foam stabilization explanation (pH, protein aggregation, and interfacial behavior) to core takeaway* | *~15s (35 words)* | *Slight loss of chemical depth on cream of tartar, keeps causal takeaway* |
 
    - Runtime Recommendation (Keep Full Long-Form / Adopt Specific Trims / Split into Series).
 2. **Clean Recording Script (For Voiceover Talent & TTS):**
@@ -118,11 +118,12 @@ Use visual changes when they clarify a physical mechanism, comparison, historica
    - Completely stripped of bracketed claim markers (`[C1]`) and visual tags (`[Visual Cue: ...]`) to ensure clean recording without accidental vocalization of metadata.
 3. **Annotated Production Script (For Video Editors & Animators):**
    - Complete voiceover text containing all inline `[Visual Cue: ...]` tags and exhaustive internal claim markers (`[C1]`, `[C2]`).
-4. **Production Claim Ledger (Exhaustive Verification Map):**
-   *Provide an exhaustive mapping table connecting EVERY tagged claim `[C1]...[Cn]` in the annotated script to its verified research evidence. Ensure zero orphan markers and verify that Narration Treatment strictly adheres to Evidence Status:*
+4. **Release Production Claim Ledger (Exhaustive Cross-Surface Map):**
+   *Provide an exhaustive mapping table connecting EVERY factual assertion in the episode to its verified research evidence. This includes all spoken narration claims, on-screen text/graphic callouts, and video description notes (originating from Essential Insights or promoted Deep-Cut Candidates `[DC-ITEM-##]`). Strictly verify zero orphan markers, zero unmapped claims, and that Treatment adheres to Evidence Status:*
 
-   | Claim ID | Script Excerpt | Verified Dossier Claim | Source IDs | Evidence Status | Narration Treatment |
-   |---|---|---|---|---|---|
-   | `[C1]` | *"Excerpt from script narration..."* | *Corresponding fact in dossier Knowledge Map* | `[S1]`, `[S3]` | `[CONFIRMED]` | `[FACTUAL]` |
-   | `[C2]` | *"Excerpt with qualifying debate..."* | *Contested origin claim in dossier* | `[S2]`, `[S4]` | `[DISPUTED]` | `[QUALIFIED]` |
-   | `[C3]` | *"Excerpt framing myth as legend..."* | *Popular folklore documented in dossier* | `[S5]` | `[POPULAR MYTH]` | `[MYTH-LABELED]` |
+   | Claim ID | Origin (Dossier Fact / [DC-ITEM-##]) | Claim Text / Graphic Excerpt | Presentation Surface (Narration / Visual Overlay / Description Note) | Source IDs | Evidence Status | Narration / Display Treatment | Review Verdict |
+   |---|---|---|---|---|---|---|---|
+   | `[C1]` | *Dossier Chiffon Fact* | *"Excerpt from script narration..."* | *Narration* | `[S1]`, `[S3]` | `[CONFIRMED]` | `[FACTUAL]` | `[PASS]` |
+   | `[C2]` | *Dossier Origin Debate* | *"Excerpt with qualifying debate..."* | *Narration* | `[S2]`, `[S4]` | `[DISPUTED]` | `[QUALIFIED]` | `[PASS]` |
+   | `[C3]` | *`[DC-CHIFFON-02]`* | *"Patent US2456789 filed in 1948"* | *Visual Overlay (Lower-Third)* | `[S3]` | `[CONFIRMED]` | `[FACTUAL]` | `[PASS]` |
+   | `[C4]` | *Dossier Folklore* | *"Excerpt framing myth as legend..."* | *Narration* | `[S5]` | `[POPULAR MYTH]` | `[MYTH-LABELED]` | `[PASS]` |

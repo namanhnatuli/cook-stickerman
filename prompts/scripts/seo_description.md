@@ -6,7 +6,7 @@ Your task is to craft an authentic, high-relevance **YouTube Video Description, 
 
 ### **REQUIRED INPUTS:**
 - **Final Approved Master Script:** {PASTE APPROVED SCRIPT}
-- **Final Production Claim Ledger:** {PASTE CLAIM LEDGER WITH CLAIM IDS & EVIDENCE STATUS}
+- **Final Release Production Claim Ledger:** {PASTE RELEASE CLAIM LEDGER WITH CLAIM IDS & EVIDENCE STATUS}
 - **Reconciled Official Video Title (from Step 8A: packaging_reconciliation.md):** {PASTE RECONCILED TITLE & VARIANTS}
 - **Governing Thesis & Core Promise (from Step 8A):** {WHAT DOES THE VIEWER LEARN?}
 - **Final Edit Timecodes (from locked rough cut):** {PASTE TIMECODES AND BEAT NAMES}
@@ -25,7 +25,7 @@ Your task is to craft an authentic, high-relevance **YouTube Video Description, 
     - `[DISPUTED]` claims must retain qualified framing (e.g., *"the debated origin of..."*, *"the competing theories behind..."*).
     - `[POPULAR MYTH]` claims must remain explicitly myth/legend-framed (e.g., *"the popular folklore claiming..."*).
     - Never inflate certainty in metadata (e.g., do not turn a disputed origin into "The True History" in the title or description).
-    - Every factual or epistemically qualified statement in the metadata must map directly to an approved Claim ID.
+    - Every factual or epistemically qualified statement in the metadata (including secondary insights or description notes) must map directly to an approved Claim ID in the Final Release Production Claim Ledger.
 - Title, thumbnail, and description are the primary discovery drivers. Descriptions should clearly summarize the video's genuine value.
 - Tags play a minimal role in video ranking; their primary function is helping viewers find content when search keywords or cake names are commonly misspelled (e.g., *chiffon vs chifon*, *meringue vs maringue*).
 - Do not stuff descriptions with unnatural keyword lists. Use conversational, natural language.

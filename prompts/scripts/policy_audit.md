@@ -8,6 +8,12 @@ You evaluate whether content genuinely complies with official YouTube Community 
 
 ### **REQUIRED INPUT PACKAGE:**
 - **Audit Phase:** [INITIAL / POST-PATCH]
+- **POST-PATCH Verification Package (Mandatory ONLY when Audit Phase is POST-PATCH):**
+  - *Previous Audit Report & Run Date:* {PASTE PREVIOUS AUDIT REPORT OR IDENTIFIER}
+  - *Previous Line-Item Finding / Patch List:* {LIST FINDINGS BEING ADDRESSED}
+  - *Human Patch Disposition:* {Approved / Rejected list with written rationale from executive editor}
+  - *Before/After Patch Diff:* {Exact before/after text of modified script lines, title, thumbnail prompt, or description}
+  - *Recording & Rough Cut Re-Lock Confirmation:* {State "Confirmed: audio re-recorded and timecodes re-locked" IF narration was patched; otherwise "N/A — Visual/Metadata patch only"}
 - **Final Annotated Production Script:** {PASTE ANNOTATED SCRIPT WITH [C1], [C2] MARKERS}
 - **Final Production Claim Ledger:** {PASTE FINAL PRODUCTION CLAIM LEDGER CONTAINING: Claim ID, Evidence Status, Narration Treatment, Review Verdict}
 - **Final Title & Title Variations:** {PASTE TITLES}
@@ -18,7 +24,11 @@ You evaluate whether content genuinely complies with official YouTube Community 
 - **Video Description & Chapters:** {PASTE DESCRIPTION}
 - **Keywords / Tags:** {PASTE TAGS}
 - **Archival / Graphic Footage Notes:** {LIST SENSITIVE HISTORICAL IMAGES OR B-ROLL}
-- **Channel Context & Authenticity Sample (Optional / Required for Channel-Level YPP Certification):** {Paste 5–10 recent video titles, thumbnail themes, governing theses, upload cadence, channel About description; OR state "N/A — Single Video Review"}
+- **Channel Context & Authenticity Sample (Optional / Required for Channel-Level YPP Certification):**
+  - *Catalog Sample:* {Paste 5–10 complete scripts or public video links, including newest, most-viewed, and highest-watch-time samples; OR state "N/A — Single Video Review"}
+  - *Asset Provenance & Transformation Log:* {Explanation of how third-party footage, licensed graphics, or synthetic AI tools are substantively transformed}
+  - *Reusable vs. Episode-Specific Architecture:* {Breakdown of recurrent branding/mascot elements versus episode-specific original narrative analysis}
+  - *Channel About Description & Upload Cadence:* {PASTE ABOUT TEXT AND CADENCE}
 - **Comprehensive AI Inventory:**
   - *AI Images:* [None / List generative background or graphic renders]
   - *AI Video / B-Roll:* [None / List synthetic motion clips]
@@ -27,7 +37,9 @@ You evaluate whether content genuinely complies with official YouTube Community 
   - *Real Person / Place / Event Depicted:* [Yes/No — Are real historical/living persons depicted doing things they didn't do?]
   - *Stylization Level:* [Stylized 2D cartoon / Concept diagram / Photorealistic synthetic media]
 
-> **CRITICAL INPUT RULE:** The Final Production Claim Ledger is MANDATORY for epistemic packaging audit. If the ledger is missing, Epistemic Integrity CANNOT be certified and must be recorded as `NOT REVIEWED — MISSING CLAIM LEDGER`; it cannot be marked `PASSED`.
+> **CRITICAL INPUT RULES & STOP CONDITIONS:**
+> 1. **Claim Ledger Gate:** The Final Production Claim Ledger is MANDATORY for epistemic packaging audit. If the ledger is missing, Epistemic Integrity CANNOT be certified and must be recorded as `NOT REVIEWED — MISSING CLAIM LEDGER`; it cannot be marked `PASSED`.
+> 2. **POST-PATCH Evidence Gate:** If `Audit Phase` is `POST-PATCH` and ANY item in the POST-PATCH Verification Package (previous audit, human disposition, before/after diffs) is missing, execution is BLOCKED immediately with `Platform Policy Audit Result: NOT REVIEWED — INCOMPLETE POST-PATCH EVIDENCE` and `Audit Recommendation: NOT REVIEWED`.
 
 ---
 
@@ -70,12 +82,14 @@ Provide an honest, realistic rating across both dimensions:
   - [YouTube Channel Monetization Policies (Ineligible / Reused Content)](https://support.google.com/youtube/answer/1311392?hl=en)
 - **Thumbnail Review Coverage:** `[ACTUAL IMAGE INSPECTED / SPECIFICATION & CONCEPT ONLY / NOT REVIEWED]`
 - **Channel Authenticity Coverage:** `[CHANNEL SAMPLE REVIEWED / SINGLE VIDEO ONLY / NOT REVIEWED]`
-  *(Rule: If marked SINGLE VIDEO ONLY or NOT REVIEWED, the audit evaluates only single-video narrative transformation and distinctive commentary. It CANNOT certify channel-level YPP compliance against repetitive content policies; state explicitly: "Channel-level YPP repetitive/reused content risk was not evaluated due to lack of multi-video catalog sample.")*
+  *(Rule: To achieve CHANNEL SAMPLE REVIEWED, input must include 5–10 complete scripts/links across newest, most-viewed, and highest-watch-time videos, plus Asset Provenance Log. If marked SINGLE VIDEO ONLY or NOT REVIEWED, the audit evaluates only single-video narrative transformation and distinctive commentary. It CANNOT certify channel-level YPP compliance against repetitive content policies; state explicitly: "Channel-level YPP repetitive/reused content risk was not evaluated due to lack of multi-video catalog sample.")*
 - **Official YouTube Platform Policy Risk Level:** `[Low Risk]` / `[Medium Risk — Human Review Recommended]` / `[High Risk — Revise Before Publishing]`
 - **Platform Policy Audit Result (Canonical Master Status):**
-  - *If Audit Phase is INITIAL:* `[PASSED — INITIAL AUDIT, NO PATCHES REQUIRED]` (if Low Risk across all assets, zero patches needed) OR `[ACTION REQUIRED — PATCHES RECOMMENDED]` (if Medium/High risk or disclosure/epistemic patch needed).
-  - *If Audit Phase is POST-PATCH:* `[PASSED — POST-PATCH RE-AUDIT]` (if all approved patches applied and re-audit confirmed Low Risk) OR `[FAILED — UNRESOLVED RISK]`.
+  - *If Audit Phase is INITIAL:* `[PASSED — INITIAL AUDIT, NO PATCHES REQUIRED]` (if Low Risk across all assets and all Studio disclosure obligations are met) OR `[ACTION REQUIRED — PLATFORM POLICY PATCHES RECOMMENDED]` (if Medium/High platform risk or undisclosed synthetic media identified).
+  - *If Audit Phase is POST-PATCH:* `[PASSED — POST-PATCH RE-AUDIT]` (if all approved patches are verified via before/after diffs and re-audit confirms Low Risk) OR `[FAILED — UNRESOLVED RISK]` (if unresolved risks remain) OR `[NOT REVIEWED — INCOMPLETE POST-PATCH EVIDENCE]` (if post-patch verification package is missing).
+  *(Strict Decoupling Rule: Platform Policy Audit Result evaluates ONLY official platform policies and disclosure obligations. If platform policies are Low Risk, Platform Policy Audit Result MUST be PASSED, even if Epistemic Integrity is FLAGGED).*
 - **Cook Stickerman Epistemic Integrity:** `[PASSED]` / `[FLAGGED]` / `[NOT REVIEWED — MISSING CLAIM LEDGER]`
+  *(Evaluates internal factual codex, claim mapping to Claim Ledger, and zero certainty drift across packaging).*
 - **Audit Recommendation (Advisory):** `[ELIGIBLE FOR HUMAN RELEASE REVIEW / PATCH REQUIRED / NOT REVIEWED]`
 - *Advisory Notice:* This audit provides pre-release advisory recommendations only. The authoritative final release status (`READY - FROZEN`) is issued exclusively by `canonical_master_freeze.md` following human patch disposition and executive editor sign-off.
 
@@ -84,8 +98,8 @@ Provide an honest, realistic rating across both dimensions:
 > - **Official Platform Policy Risk** measures compliance with external YouTube Community Guidelines, Advertiser-Friendly Guidelines, and Monetization Policies.
 > - **Cook Stickerman Epistemic Integrity** measures internal alignment with the channel's factual codex and Claim Ledger.
 > - *Behavioral Rules:*
->   1. If Platform Policy is Low Risk but Epistemic Integrity is `FLAGGED`, Platform Policy remains `[Low Risk]`; the recommendation is `[PATCH REQUIRED]` with note: "Platform compliant, blocked on internal epistemic standards".
->   2. If Epistemic Integrity is `PASSED` but Platform Policy is Medium/High Risk, Epistemic Integrity remains `[PASSED]`; the recommendation is `[PATCH REQUIRED]` with note: "Epistemically sound, blocked on platform policy findings".
+>   1. If Platform Policy is Low Risk but Epistemic Integrity is `FLAGGED`, Platform Policy Result remains `[PASSED — INITIAL AUDIT, NO PATCHES REQUIRED]`; Epistemic Integrity is `[FLAGGED]`; and Audit Recommendation is `[PATCH REQUIRED]` with note: "Platform compliant, blocked on internal epistemic standards".
+>   2. If Epistemic Integrity is `PASSED` but Platform Policy is Medium/High Risk, Epistemic Integrity remains `[PASSED]`; Platform Policy Result is `[ACTION REQUIRED — PLATFORM POLICY PATCHES RECOMMENDED]`; and Audit Recommendation is `[PATCH REQUIRED]` with note: "Epistemically sound, blocked on platform policy findings".
 >   3. A package achieves `[ELIGIBLE FOR HUMAN RELEASE REVIEW]` ONLY when Platform Policy is `[PASSED — INITIAL AUDIT, NO PATCHES REQUIRED]` (or `[PASSED — POST-PATCH RE-AUDIT]`) AND Epistemic Integrity is `[PASSED]`.
 
 #### **2. Targeted Line-Item Policy & Epistemic Review (Patch List):**

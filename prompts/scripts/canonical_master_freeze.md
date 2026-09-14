@@ -83,6 +83,7 @@ This frozen document (`11_canonical_master_freeze.md`) is the **single source of
 - **Final Package Verification Status:** `[PASSED — INITIAL AUDIT, NO PATCHES REQUIRED]` / `[PASSED — POST-PATCH RE-AUDIT]`
 - **Official Platform Policy Risk Level:** `[Low Risk — Zero Unresolved Platform Violations]`
 - **Cook Stickerman Epistemic Integrity:** `[PASSED — Zero Certainty Drift; 100% Packaging Claims Mapped]`
+- **Channel Authenticity Coverage Mode:** `[CHANNEL SAMPLE REVIEWED / SINGLE VIDEO ONLY / NOT REVIEWED]`
 - **Human-Approved Patch Resolution Table:**
 *(If no patches were required, record: "No patches required; initial audit confirmed Low Risk and Epistemic Integrity PASSED across all package assets.")*
 
@@ -122,14 +123,15 @@ This frozen document (`11_canonical_master_freeze.md`) is the **single source of
 
 ---
 
-## 5. FINAL PRODUCTION CLAIM LEDGER (100% SOURCE-MAPPED AND EPISTEMICALLY RESOLVED)
-*(Every narrated factual or historical proposition must be cataloged here with valid Source IDs. Zero orphan markers; zero unverified claims; all claims must achieve Review Verdict: PASS.)*
+## 5. FINAL RELEASE PRODUCTION CLAIM LEDGER (CROSS-SURFACE TRACEABILITY)
+*(Every factual assertion across ALL surfaces—Narration, On-Screen Visual Graphics, and Video Description—must be cataloged here with its origin, valid Source IDs, and verified Epistemic Status. This includes all Essential Insights and promoted Deep-Cut Candidates [DC-ITEM-##]. Zero orphan markers, zero unmapped packaging claims, and 100% of claims must achieve Review Verdict: PASS).*
 
-| Claim ID | Script Excerpt | Dossier Knowledge Map Fact | Source IDs | Evidence Status | Narration Treatment | Review Verdict |
-|---|---|---|---|---|---|---|
-| `[C1]` | *"Excerpt..."* | *Fact in dossier Knowledge Map* | `[S1]`, `[S2]` | `[CONFIRMED]` | `[FACTUAL]` | `[PASS]` |
-| `[C2]` | *"Excerpt..."* | *Contested origin theory* | `[S3]`, `[S4]` | `[DISPUTED]` | `[QUALIFIED]` | `[PASS]` |
-| `[C3]` | *"Excerpt..."* | *Common bakery myth* | `[S5]` | `[POPULAR MYTH]` | `[MYTH-LABELED]` | `[PASS]` |
+| Claim ID | Origin (Dossier Fact / [DC-ITEM-##]) | Claim Text / Graphic Excerpt | Presentation Surface (Narration / Visual Overlay / Description Note) | Source IDs | Evidence Status | Narration / Display Treatment | Review Verdict |
+|---|---|---|---|---|---|---|---|
+| `[C1]` | *Dossier Chiffon Fact* | *"Excerpt..."* | *Narration* | `[S1]`, `[S2]` | `[CONFIRMED]` | `[FACTUAL]` | `[PASS]` |
+| `[C2]` | *Dossier Origin Debate* | *"Excerpt..."* | *Narration* | `[S3]`, `[S4]` | `[DISPUTED]` | `[QUALIFIED]` | `[PASS]` |
+| `[C3]` | *`[DC-CHIFFON-02]`* | *"Patent US2456789 filed in 1948"* | *Visual Overlay (Lower-Third)* | `[S3]` | `[CONFIRMED]` | `[FACTUAL]` | `[PASS]` |
+| `[C4]` | *Dossier Folklore* | *"Excerpt..."* | *Narration* | `[S5]` | `[POPULAR MYTH]` | `[MYTH-LABELED]` | `[PASS]` |
 
 ---
 

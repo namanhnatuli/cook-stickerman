@@ -46,13 +46,13 @@ For each item/cake (designating 2–3 as **Hero Items** with expanded detail):
   - *Evidence Status:* `[CONFIRMED / DISPUTED / POPULAR MYTH / UNVERIFIED]`
   - *Required Narration Treatment:* `[FACTUAL / QUALIFIED / MYTH-LABELED / BLOCKED]`
   - *Source IDs:* `[S4]`
-- **Deep-Cut Candidates (0..N):** [Memorable niche trivia, archival discoveries, or subtle micro-mechanisms that add unexpected depth; tag each with [D1], [D2], etc.]
-  - `[D1]`: [Specific niche insight]
+- **Deep-Cut Candidates (0..N):** [Memorable niche trivia, archival discoveries, or subtle micro-mechanisms that add unexpected depth; tag each with namespaced IDs, e.g., [DC-CHIFFON-01], [DC-CHIFFON-02], to guarantee cross-item uniqueness]
+  - `[DC-<ITEM>-01]`: [Specific niche insight]
     - *Evidence Status:* `[CONFIRMED / DISPUTED / POPULAR MYTH / UNVERIFIED]`
     - *Required Narration Treatment:* `[FACTUAL / QUALIFIED / MYTH-LABELED / BLOCKED]`
     - *Source IDs:* `[S5]`
     - *Initial Placement Recommendation:* `[Narration Candidate / On-Screen Visual Callout / Description Note / Omit]` (with brief rationale)
-  - `[D2]` (Optional): [Second niche insight with identical metadata fields]
+  - `[DC-<ITEM>-02]` (Optional): [Second niche insight with identical metadata fields]
 - **Causal Chain:**
   - *Technique / Ingredient Choice:* [e.g., Folding liquid oil into yolk batter instead of creaming solid butter]
     - *Evidence Status:* `[CONFIRMED]` | *Treatment:* `[FACTUAL]` | *Source IDs:* `[S1]`
@@ -60,7 +60,7 @@ For each item/cake (designating 2–3 as **Hero Items** with expanded detail):
     - *Evidence Status:* `[CONFIRMED]` | *Treatment:* `[FACTUAL]` | *Source IDs:* `[S1]`
   - *Visible Crumb / Texture Result:* [e.g., Springy, pillowy crumb that maintains moist softness when served cold]
     - *Evidence Status:* `[CONFIRMED]` | *Treatment:* `[FACTUAL]` | *Source IDs:* `[S2]`
-  - *Practical Baker Takeaway:* [e.g., Choose oil-based foam cakes for refrigerated frosted desserts]
+  - *Practical Baker Takeaway:* [e.g., Consider oil-based foam cakes when chilled crumb softness is a priority, while also accounting for structural strength and frosting load]
     - *Evidence Status:* `[CONFIRMED]` | *Treatment:* `[FACTUAL]` | *Source IDs:* `[S2]`
 
 #### 2. Chemical & Physical Mechanics (The Science)

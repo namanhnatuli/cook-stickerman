@@ -53,7 +53,7 @@ Break the script into logical **Scene Clusters**:
 - **Visual Composition (4-Layer Structure):**
   - *Layer 1 (Background):* Kraft paper, warm kitchen counter, dark studio gradient, split-screen.
   - *Layer 2 (Main Visual Asset):* Macro cake footage, 3D cross-section diagram, archival document.
-  - *Layer 3 (On-Screen Text & Motion Design):* Kinetic typography (2–4 words max), animated arrows, data callouts, sound effect (SFX) cue.
+  - *Layer 3 (On-Screen Text & Motion Design):* Kinetic typography (2–4 words max), animated arrows, data callouts (mapped to Claim ID [C#] if displaying a factual micro-stat or deep cut), sound effect (SFX) cue.
   - *Layer 4 (Mascot Interaction):* `None` OR `[Asset: filename.png]` with exact screen placement & entrance animation.
 - **Search Queries & Discovery Links:**
   - *Stock Video Candidate:* Search term + direct link: `https://www.pexels.com/search/videos/{encoded_keyword}/`

@@ -64,7 +64,7 @@ This outline organizes the episode by **pedagogical teaching beats**, mapping ve
 - **Essential Insight (Must Narrate):** [The non-negotiable core truth]
   - *Evidence Status:* `[CONFIRMED / DISPUTED / POPULAR MYTH]`
   - *Required Narration Treatment:* `[FACTUAL / QUALIFIED / MYTH-LABELED]`
-- **Deep-Cut Assignments (from Dossier):** [List assigned candidate IDs and intended placement: e.g., [D1] -> Narration Candidate; [D2] -> On-Screen Visual Callout]
+- **Deep-Cut Assignments (from Dossier):** [List assigned candidate IDs and intended placement: e.g., [DC-CHIFFON-01] -> Narration Candidate; [DC-CHIFFON-02] -> On-Screen Visual Callout]
 - **Causal Chain:** [Technique/Ingredient] → [Chemical/Physical Mechanism] → [Visible Crumb/Texture Result] → [Baker Takeaway]
 - **Evidence Basis:** [S1], [S3], etc. (from Research Dossier)
 - **Key Specific Data:** [Exact verified temperatures, ratios, eras, geography; or sourced ranges]
@@ -77,18 +77,18 @@ This outline organizes the episode by **pedagogical teaching beats**, mapping ve
 - *Sample Bridge Line:* "[Natural sentence bridging to next block]"
 ```
 
-#### **3. Deep-Cut Disposition Ledger (100% Traceability Gate):**
-*(Strict Rule: 100% of Deep-Cut Candidates `[D1]...[Dn]` from the research dossier must be cataloged here with a definitive placement decision. If `Omit` is chosen, the rationale must be pedagogical—e.g., redundant with an existing insight, off-topic, or weak source evidence; citing duration constraints is strictly FORBIDDEN in `AUTO — KNOWLEDGE-FIRST` mode).*
+#### **3. Deep-Cut Disposition Ledger (100% Traceability & Release Ledger Gate):**
+*(Strict Rule: 100% of Deep-Cut Candidates `[DC-ITEM-##]` from the research dossier must be cataloged here. Every candidate retained as `Narration Candidate`, `On-Screen Visual Callout`, or `Description Note` MUST be assigned a formal Claim ID `[C#]` in the Release Production Claim Ledger. If `Omit` is chosen, the rationale must be pedagogical—e.g., redundant, off-topic, or weak evidence; citing duration constraints is strictly FORBIDDEN in `AUTO — KNOWLEDGE-FIRST` mode).*
 
-| Deep-Cut ID | Insight / Micro-Mechanism | Source IDs | Placement Decision (Narration Candidate / Visual Callout / Description Note / Omit) | Pedagogical Rationale | Retained in Outline? (YES / NO) |
-|---|---|---|---|---|---|
-| `[D1]` | *[Specific insight from dossier]* | `[S5]` | *Narration Candidate* | *Adds essential distinction between ...* | *YES* |
-| `[D2]` | *[Specific insight from dossier]* | `[S3]` | *On-Screen Visual Callout* | *Specific patent date/micro-stat best conveyed visually* | *YES (Visual)* |
-| `[D3]` | *[Specific insight from dossier]* | `[S4]` | *Omit* | *Redundant with [D1]; weak single-source claim* | *NO* |
+| Deep-Cut ID | Insight / Micro-Mechanism | Source IDs | Placement Decision (Narration Candidate / Visual Callout / Description Note / Omit) | Pedagogical Rationale | Promoted to Release Claim Ledger? | Assigned Claim ID |
+|---|---|---|---|---|---|---|
+| `[DC-CHIFFON-01]` | *[Specific insight from dossier]* | `[S5]` | *Narration Candidate* | *Adds essential distinction between lipid crystals and staling* | *YES (Narration)* | `[C12]` |
+| `[DC-CHIFFON-02]` | *[Specific insight from dossier]* | `[S3]` | *On-Screen Visual Callout* | *Specific patent date/micro-stat best conveyed visually* | *YES (Visual Overlay)* | `[C13]` |
+| `[DC-POUND-01]` | *[Specific insight from dossier]* | `[S4]` | *Omit* | *Redundant with core ratio; weak single-source claim* | *NO (Omitted)* | *N/A* |
 
 #### **4. Pacing & Breadth Estimates (Post-Outlining Reference):**
 - **Pacing Mode Selected:** `[AUTO — KNOWLEDGE-FIRST / TARGETED]`
 - **Projected Word Count Range:** ____ words (Natural estimate based on teaching breadth at 140–150 WPM; not a compliance ceiling)
 - **Projected Beat Timecodes:** [Estimated timeline for rough cut alignment]
 - **Essential Insights Verification Checklist:** [Confirmation that 100% of mandatory insights from the dossier are assigned to a block]
-- **Deep-Cut Traceability Checklist:** [Confirmation that 100% of `[D#]` candidates from the dossier are accounted for in the Disposition Ledger above]
+- **Deep-Cut Traceability & Promotion Checklist:** [Confirmation that 100% of `[DC-ITEM-##]` candidates from the dossier are accounted for in the Disposition Ledger and every retained item is promoted to a Claim ID in the Release Claim Ledger]
