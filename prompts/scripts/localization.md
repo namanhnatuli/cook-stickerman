@@ -38,6 +38,10 @@ This is **cultural transcreation**, preserving the core pedagogical insights, na
    - Localize units appropriately for the target market (e.g., Celsius vs. Fahrenheit, grams vs. ounces).
    - Use established native culinary terminology (e.g., *lòng trắng trứng bông cứng* instead of awkward literal translations; *phản ứng Maillard*, *nhũ hóa*).
 
+4. **Dual-Script Parity Standard (Projection Rule):**
+   - *Clean Localized Recording Script must equal the exact spoken-text projection of the Annotated Localized Production Script after claim markers (`[C1]`) and visual cues (`[Visual Cue: ...]`) are programmatically removed.*
+   - Discrepancies between the recording version and production subtitling version block native sign-off.
+
 ---
 
 ### **DELIVERABLE OUTPUT FORMAT:**
@@ -63,15 +67,18 @@ This is **cultural transcreation**, preserving the core pedagogical insights, na
 | *Deep-dive beat* | *2:10 (130s)* | *134s* | *+4s* | *Tighten syntax or reallocate 4s pause from preceding beat* |
 
 #### **4. Clean Localized Recording Script (For Voiceover Talent / TTS):**
-*(Zero bracketed claim markers, zero visual cues, zero metadata tags. Pure native spoken text organized by locked chapter timecodes.)*
+*(Zero bracketed claim markers, zero visual cues, zero metadata tags. Pure native spoken text organized by locked chapter timecodes. Exactly mirrors spoken projection of Annotated Script.)*
 
 ```markdown
 ### [Locked Master Timecode, e.g., 0:00 - 0:45] - [Beat Name in Target Language]
 [Pure localized voiceover narration with vocal inflections in bold]
 ```
 
-#### **5. Annotated Localized Production Script (For Video Editors & Subtitling):**
+#### **5. Annotated Localized Production Script (For Video Editors Only):**
 *(Contains inline [Visual Cue: ...] tags and exhaustive internal [C1], [C2] claim markers corresponding to master script.)*
+
+> **CRITICAL SUBTITLE NOTICE:**
+> Subtitles and closed-caption (CC) files must be generated from the **Clean Localized Recording Script** (or text projection), **NEVER directly from this annotated script**. Injecting internal `[Visual Cue]` or `[C1]` tags into customer-facing subtitles constitutes a severe production failure.
 
 ```markdown
 ### [Locked Master Timecode, e.g., 0:00 - 0:45] - [Beat Name in Target Language]
@@ -80,26 +87,42 @@ This is **cultural transcreation**, preserving the core pedagogical insights, na
 ```
 
 #### **6. Localized Claim Fidelity Ledger (Cross-Language Knowledge Audit):**
-> **STRICT COMPLIANCE MANDATE:**
-> Every single Claim ID from the approved Canonical Master Freeze package must appear **exactly once** in this ledger. Verify that no negations were flipped, no mechanisms were weakened, and all temperature/weight conversions are mathematically accurate.
+> **STRICT RELEASE GATES & CLASSIFICATION RULES:**
+> 1. **100% Accounting:** Every single Claim ID (`[C1]`, `[C2]`, ...) from the approved Canonical Master Freeze package must appear **exactly once** in this ledger. Missing any Claim ID **BLOCKS release**.
+> 2. **`[Preserved]`:** The claim proposition, causal mechanism, and numbers are fully intact. Rephrasing for natural target-language flow or using standard native culinary idioms remains classified as `[Preserved]`. Permitted to pass automatically.
+> 3. **`[Adapted]`:** Reserved STRICTLY for cases where an analogy, cultural reference, or explanatory framework was modified for local cultural comprehension in a way that alters presentation. Must provide explicit pedagogical rationale and **requires native human approval** before release.
+> 4. **`[Flagged]`:** Claim is distorted, factually shifted, inverted, or untranslatable. **BLOCKS release immediately** until revised.
 
-| Master Claim ID | Master Claim Meaning | Localized Script Line | Unit Conversion (if applicable) | Fidelity Status ([Preserved] / [Adapted] / [Flagged]) |
-|---|---|---|---|---|
-| `[C1]` | *Original physical mechanism* | *Dòng dịch bản địa tương ứng* | *350°F → 177°C* | `[Preserved]` |
-| `[C2]` | *Historical date / inventor* | *Dòng dịch bản địa tương ứng* | *N/A* | `[Preserved]` |
+| Master Claim ID | Master Claim Meaning | Localized Script Line | Adaptation Justification (Required ONLY if [Adapted]) | Unit Conversion | Fidelity Status ([Preserved] / [Adapted] / [Flagged]) |
+|---|---|---|---|---|---|
+| `[C1]` | *Original physical mechanism* | *Dòng dịch bản địa tự nhiên* | *N/A (Standard natural translation)* | *350°F → 177°C* | `[Preserved]` |
+| `[C2]` | *Cultural analogy / Historical context* | *Dòng dịch dùng ví von văn hóa địa phương* | *Replaced Western cultural analogy with local culinary equivalent for viewer comprehension* | *N/A* | `[Adapted]` |
 
-#### **7. Cultural & Pronunciation Glossary:**
+#### **7. Localized Packaging Fidelity & Policy Gate:**
+*(Evaluates localized Title, Thumbnail Text, and Description against Canonical Master & Platform Policies)*
+
+- **Zero New Claims Gate:** Localized title variations, thumbnail text, and video description must introduce **zero new factual claims** not present in the master.
+- **Canonical Claim Mapping:** All factual packaging statements must map directly to Canonical Claim IDs (`[C1]`, `[C2]`, etc.).
+- **Canonical Source Register Discipline:** All external links and educational references must be copied exclusively from the canonical source set.
+- **Localized Policy Clearance:** Verify that transcreation did not introduce sensational clickbait, exaggerated health/medical claims, or policy-sensitive framing not present in the master.
+- **Localized Package Policy Review Status:** `[PENDING / PASSED / FAILED]` — *`FAILED` or unreviewed status strictly blocks publishing.*
+
+#### **8. Cultural & Pronunciation Glossary:**
 - **Key Culinary Terms:** List of technical food science terms and how they were localized.
 - **Pronunciation Guide:** Proper phonetic guide for foreign pastry names (e.g., *Chiffon, Basque, Kouign-amann*).
 
-#### **8. Native Quality Assurance (QA) Sign-Off Block:**
+#### **9. Native Quality Assurance (QA) Sign-Off Block:**
 *(AI draft must NOT self-certify native human sign-off; record status transparently)*
 ```markdown
-- QA Status: [AI Draft — Pending Native Review]
+- QA Status: [AI Draft — Pending Native Review / BLOCKED / PASSED]
 - Native Reviewer: [Pending / Name]
 - Review Date: [YYYY-MM-DD]
-- Terminology Approved: [ ] Yes  [ ] Pending
+- Script Parity Verified: [ ] Yes  [ ] Pending (Clean Recording Script equals spoken-text projection of Annotated Production Script)
+- Subtitle Safety Verified: [ ] Yes  [ ] Pending (Subtitles generated strictly from Clean Script; zero internal tags)
+- Claim Fidelity Ledger Verified: [ ] Yes  [ ] Pending (100% Claim IDs accounted for; zero missing)
+- Fidelity Release Gate Passed: [ ] Yes  [ ] Pending (0 [Flagged]; all [Adapted] explicitly approved by native reviewer)
+- Localized Packaging Fidelity & Policy Gate: [ ] Yes  [ ] Pending (Zero new claims; status: PASSED)
+- Terminology & Glossary Approved: [ ] Yes  [ ] Pending
 - Unit Conversion Checked: [ ] Yes  [ ] Pending
-- Claim Fidelity Ledger Verified: [ ] Yes  [ ] Pending (All master Claim IDs accounted for with zero meaning distortion)
 - Audio Sync & Breath Pacing Checked: [ ] Yes  [ ] Pending (Verified on rendered audio track against master video)
 ```

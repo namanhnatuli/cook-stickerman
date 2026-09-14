@@ -37,10 +37,18 @@
    - Flag content only when it graphically or sensationally focuses on gore, severe injury, self-harm, suicide, or dangerous acts easily imitated by minors.
    - When covering tragic historical events (famine, wartime rationing, industrial accidents like the Boston Molasses Flood), use a calm, respectful documentary context without gratuitous dramatization.
 
-3. **Altered & Synthetic Content Disclosure (YouTube GenAI Reality):**
-   - Routine infographics, 2D sticker animations (like Cook Stickerman), and conceptual charts do **not** require YouTube platform-level altered-content disclosures.
-   - **Platform Disclosure:** Required in YouTube Studio only when realistic/photorealistic footage or images depict real people, places, or events that did not actually occur.
-   - **Epistemic Clarity Label:** When an educational cross-section diagram or 3D cutaway is conceptual rather than a microscopic scan, label it as an *"Illustrative model / Concept diagram"* to maintain educational credibility.
+3. **Altered & Synthetic Content Disclosure (Official YouTube GenAI Policy):**
+   - `writing_rules.md` is the unified source of truth for all platform and editorial disclosure decisions across the pipeline.
+   - **Platform Disclosure Required (YouTube Studio Toggle: YES):**
+     - *AI-Generated Music / Soundtrack:* Requires disclosure if video uses generative AI to synthesize the soundtrack or background musical composition.
+     - *Voice Cloning of Other Individuals:* Requires disclosure if voice cloning or voice conversion technology mimics a real living or historical person saying words they did not speak.
+     - *Photorealistic Synthetic Media:* Requires disclosure if realistic/photorealistic footage or images depict real people doing things they didn't do, or realistically portray real-world events that did not occur.
+   - **Platform Disclosure NOT Required (YouTube Studio Toggle: NO):**
+     - *Creator's Own Voice Clone:* Does not require disclosure when narrating original educational content in the creator's authorized voice.
+     - *Stylized 2D Animation & Mascots:* Cook Stickerman 2D character overlays, animated icons, and standard motion graphics do not require platform disclosure.
+   - **Conditional Assessment (Generic Synthetic TTS):**
+     - Standard generic text-to-speech narration reading original educational scripts does not require platform disclosure unless it impersonates a recognizable real individual, depicts synthetic events deceptively, or creates realistic confusion. Generic TTS must be evaluated on this conditional basis rather than blindly grouped with personal voice clones.
+   - **Epistemic Clarity Label:** When an educational cross-section diagram or 3D cutaway is conceptual rather than a physical microscopic scan, add an on-screen label (*"Illustrative model / Concept diagram"*) to maintain educational rigor.
 
 ---
 
@@ -58,9 +66,9 @@
    - **First-Person Plural ("We / Us"):** Permitted in the outro or during a synthesis transition (*"Now that we've seen how foam cakes trap air..."*).
 
 3. **Call-to-Action (CTA) Philosophy:**
-   - **Default:** Exactly **one concise, thoughtful CTA in the outro** (inviting comments on texture preferences or suggesting the next topic).
-   - **Optional:** At most **one organic diagnostic question in the body** (e.g., asking if viewers have experienced a specific cake collapse).
-   - **Rule:** Never force CTAs to hit an arbitrary count. Maximum two per video (one optional mid-body + one outro). Never beg for subscriptions in the opening hook.
+   - **Standard Baseline:** Normally **zero or one concise, thoughtful CTA in the outro** (inviting comments on texture preferences or suggesting the next topic). Include it only when it creates a natural, valuable next action for the viewer.
+   - **Optional Mid-Body Question:** At most one organic diagnostic question in the explanatory body (e.g., asking if viewers have experienced a specific cake collapse), used strictly to enhance viewer engagement with the physical mechanism.
+   - **Editorial Rule:** Never force CTAs to hit an arbitrary count. Benchmark analysis of 10 sampled explainers demonstrates that 6 of 10 videos contain zero CTAs. Never beg for subscriptions in the opening hook.
 
 4. **Sensory Vocabulary (Tactile Precision):**
    - Prioritize words that convey physical mouthfeel, crumb elasticity, and sound:

@@ -11,17 +11,32 @@ This frozen document (`11_canonical_master_freeze.md`) is the **single source of
 - **Locked Rough Cut Timecodes (from Step 7):** {PASTE LOCKED TIMECODES}
 - **Hero Thumbnail Final Render Path & Concept (from Step 8):** {PASTE THUMBNAIL DETAILS}
 - **Final SEO Description & Tags (from Step 9):** {PASTE SEO METADATA}
-- **Package-Level Policy Audit & Human Patch Disposition (from Step 10):** {PASTE POLICY AUDIT RESULTS + LIST OF HUMAN-APPROVED / REJECTED PATCHES}
-- **Post-Patch Policy Re-Audit Status:** {CONFIRM POST-PATCH AUDIT PASSED IF ASSETS WERE MODIFIED}
+- **Package-Level Policy Verification & Disposition (from Step 10):**
+  - *Verification Status:* [PASSED — INITIAL AUDIT, NO PATCHES REQUIRED / PASSED — POST-PATCH RE-AUDIT / FAILED]
+  - *Human Patch Disposition:* [List of human-approved / rejected patches with written rationale, or "None required — clean initial audit"]
 - **Human Release Approval Confirmation:** {EXPLICIT HUMAN SIGN-OFF BY LEAD EDITOR WITH DATE}
+
+> **CRITICAL STOP CONDITION (TAMPER-PROOF GATES):**
+> Execution is BLOCKED and CANNOT generate a `READY - FROZEN` release package if:
+> 1. Human sign-off is missing or incomplete.
+> 2. Package verification status is NOT one of the two valid PASSED states:
+>    - `PASSED — INITIAL AUDIT, NO PATCHES REQUIRED` (Initial audit confirmed Low Risk across all assets; zero patches needed).
+>    - `PASSED — POST-PATCH RE-AUDIT` (All approved patches applied, assets regenerated, and re-audit confirmed Low Risk).
+> 3. Any required input is missing or contains unresolved `[NEEDS VERIFICATION]` flags.
+> - When blocked: Set Freeze Status to **`BLOCKED - INCOMPLETE GATES`**, list the missing or failed gates only, and halt execution immediately.
 
 ---
 
 ### **FREEZE INTEGRITY PROTOCOL & LOOPBACK RULES:**
 
-1. **Human Patch Disposition & Post-Patch Verification Workflow:**
+1. **Human Patch Disposition & Non-Overridable Policy Rules:**
    - **Sequence:** `Policy Audit` → `Human Patch Disposition` → `Apply Approved Patches` → `Regenerate Affected Assets` → `Post-Patch Policy Audit` → `Human Release Approval` → `Canonical Freeze`.
-   - The AI must **never** independently decide to accept/reject policy patches or self-certify release. Every patch resolution must reflect the human editor's explicit disposition.
+   - **No Policy Override via Human Approval:** Human approval is a mandatory release gate, but **cannot override or waive genuine platform policy violations**. An editor cannot simply reject a policy patch and "accept the risk" if content violates YouTube Community or Advertiser-Friendly Guidelines.
+   - **Patch Rejection Protocol:** A policy patch may be rejected ONLY if:
+     a) The finding is verifiably a **false positive** under official platform context rules (e.g., benign culinary use of bread knives or oven heat).
+     b) An **alternative compliant resolution** is adopted that fully eliminates the policy risk.
+     c) The rejection is accompanied by an explicit, written **rationale**.
+   - **Zero Unresolved Risk Gate:** The final package verification must confirm **zero unresolved Medium or High risk**. Any unresolved High Risk or mandatory GenAI disclosure omission strictly blocks freeze.
    - For all accepted patches: Verify that no causal link (`Condition` → `Mechanism` → `Result`), scientific fact, or Essential Insight was diluted or distorted.
    - **MANDATORY LOOPBACK RULE:** If an accepted policy patch modifies voiceover narration, **YOU CANNOT FREEZE YET**. The project must loop back to **Step 7 (Rough Cut / Voiceover Recording)** to re-record the line, re-align the visual timeline, update SEO chapters, and lock updated timecodes before returning here.
 
@@ -41,23 +56,25 @@ This frozen document (`11_canonical_master_freeze.md`) is the **single source of
 # CANONICAL MASTER RELEASE PACKAGE: [VIDEO TITLE]
 - **Canonical Release ID:** v1.0-freeze-[slug]
 - **Freeze Date:** [YYYY-MM-DD]
-- **Freeze Status:** [PENDING HUMAN RELEASE APPROVAL / READY - FROZEN]
+- **Freeze Status:** [BLOCKED - INCOMPLETE GATES / PENDING HUMAN RELEASE APPROVAL / READY - FROZEN]
 - **Human Executive Editor Sign-Off:** [Pending / Editor Name & Date]
 - **Measured Master Runtime:** [MM:SS] (From locked rough cut timeline)
 - **Narration Spoken Word Count:** [____ words]
-- **Measured Effective Narration Speed:** [____ WPM] (Word Count / (Runtime in minutes))
+- **Overall Words per Video Minute:** [____ WPM] (Total Spoken Words / Total Video Runtime in minutes)
+- **Actual Narration Speed (Audio-Only):** [____ WPM] (Total Spoken Words / Actual Spoken Duration in minutes, excluding music intros, visual silences, or pauses)
 - **Planning Baseline WPM:** 145 WPM (Archival reference only)
 
 ---
 
 ## 1. POLICY AUDIT RECONCILIATION LOG
-- **Overall Policy Risk Level:** `[Low Risk]` / `[Medium Risk - Resolved with Human Approval]`
-- **Post-Patch Re-Audit Status:** `[PASSED - LOW RISK]`
+- **Final Package Verification Status:** `[PASSED — INITIAL AUDIT, NO PATCHES REQUIRED]` / `[PASSED — POST-PATCH RE-AUDIT]`
+- **Overall Final Policy Risk Level:** `[Low Risk — Zero Unresolved Findings]`
 - **Human-Approved Patch Resolution Table:**
+*(If no patches were required, record: "No patches required; initial audit confirmed Low Risk across all package assets.")*
 
-| Flagged Item / Asset | Evaluated Concern | Human Disposition (Accepted / Rejected) | Verified Script Resolution (No Meaning Shift) |
+| Flagged Item / Asset | Evaluated Concern | Human Disposition (Accepted / Rejected) | Rejection Rationale or Verified Script Resolution |
 |---|---|---|---|
-| *Original line* | *Risk explanation* | *Accepted / Rejected by Editor* | *Final adjusted wording* |
+| *Original line* | *Risk explanation* | *Accepted / Rejected by Editor* | *Alternative wording OR explicit false-positive justification* |
 
 ---
 
@@ -110,10 +127,10 @@ This frozen document (`11_canonical_master_freeze.md`) is the **single source of
 ## 7. RELEASE GATE SIGN-OFF CHECKLIST
 *(All items start as unchecked [ ]; only marked checked upon verifiable completion)*
 - [ ] Zero `[NEEDS VERIFICATION]` or `[CẦN KIỂM CHỨNG]` flags remaining.
-- [ ] All policy patches dispositioned by human editor and verified for zero factual distortion.
+- [ ] Final package verification confirmed: PASSED (either clean initial audit or clean post-patch re-audit).
+- [ ] Zero unresolved Medium or High policy risks remaining; all rejected patches have written rationale (false positive or alternative resolution).
 - [ ] Clean Recording Script equals the exact spoken-text projection of Annotated Production Script.
 - [ ] Timecodes locked against rendered rough cut timeline.
-- [ ] Final package policy re-audit confirms Low Risk status.
 - [ ] Human executive editor has signed off with name and date.
 - [ ] Ready for Multi-Language Localization (Step 12).
 ```
